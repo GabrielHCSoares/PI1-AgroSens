@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Agrosens.Views.MainPage"
+             Title="Agrosens - Monitoramento">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="15">
+            
+            <!-- Cabeçalho -->
+            <Label Text="Bem-vindo ao Agrosens" 
+                   FontSize="24" 
+                   FontAttributes="Bold" 
+                   HorizontalOptions="Center" />
+
+            <!-- Cartão de Clima -->
+            <Frame BorderColor="LightGray" Padding="15" CornerRadius="10">
+                <VerticalStackLayout>
+                    <Label Text="Condições Climáticas" FontAttributes="Bold" FontSize="18"/>
+                    <Label Text="Temperatura: 28°C" />
+                    <Label Text="Umidade: 65%" />
+                    <Label Text="Previsão: Parcialmente Nublado" />
+                </VerticalStackLayout>
+            </Frame>
+
+            <!-- Cartão de Sensores do Solo -->
+            <Frame BorderColor="LightGray" Padding="15" CornerRadius="10">
+                <VerticalStackLayout>
+                    <Label Text="Umidade do Solo" FontAttributes="Bold" FontSize="18"/>
+                    <ProgressBar Progress="0.45" ProgressColor="Green" />
+                    <Label Text="45% - Nível Adequado" HorizontalOptions="End" />
+                </VerticalStackLayout>
+            </Frame>
+
+            <!-- Botão de Ação -->
+            <Button Text="Atualizar Dados" 
+                    BackgroundColor="Green" 
+                    TextColor="White" 
+                    CornerRadius="10" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

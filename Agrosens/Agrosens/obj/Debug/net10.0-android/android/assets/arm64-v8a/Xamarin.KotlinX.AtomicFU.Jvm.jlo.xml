@@ -1,0 +1,5 @@
+<api>
+  <acw-types partial-assembly-name="Xamarin.KotlinX.AtomicFU.Jvm" module-name="Xamarin.KotlinX.AtomicFU.Jvm.dll">
+    <type assembly-qualified-name="KotlinX.AtomicFU.Locks.IExperimentalThreadBlockingApi, Xamarin.KotlinX.AtomicFU.Jvm, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" compat-jni-name="kotlinx.atomicfu.locks.ExperimentalThreadBlockingApi" java-key="kotlinx.atomicfu.locks.ExperimentalThreadBlockingApi" managed-key="KotlinX.AtomicFU.Locks.IExperimentalThreadBlockingApi" partial-assembly-qualified-name="KotlinX.AtomicFU.Locks.IExperimentalThreadBlockingApi, Xamarin.KotlinX.AtomicFU.Jvm" />
+  </acw-types>
+</api>

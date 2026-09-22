@@ -1,0 +1,6 @@
+<api>
+  <acw-types partial-assembly-name="Xamarin.AndroidX.Graphics.Shapes.Android" module-name="Xamarin.AndroidX.Graphics.Shapes.Android.dll">
+    <type assembly-qualified-name="AndroidX.Graphics.Shapes.IMutablePoint, Xamarin.AndroidX.Graphics.Shapes.Android, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" compat-jni-name="androidx.graphics.shapes.MutablePoint" java-key="androidx.graphics.shapes.MutablePoint" managed-key="AndroidX.Graphics.Shapes.IMutablePoint" partial-assembly-qualified-name="AndroidX.Graphics.Shapes.IMutablePoint, Xamarin.AndroidX.Graphics.Shapes.Android" />
+    <type assembly-qualified-name="AndroidX.Graphics.Shapes.IPointTransformer, Xamarin.AndroidX.Graphics.Shapes.Android, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" compat-jni-name="androidx.graphics.shapes.PointTransformer" java-key="androidx.graphics.shapes.PointTransformer" managed-key="AndroidX.Graphics.Shapes.IPointTransformer" partial-assembly-qualified-name="AndroidX.Graphics.Shapes.IPointTransformer, Xamarin.AndroidX.Graphics.Shapes.Android" />
+  </acw-types>
+</api>

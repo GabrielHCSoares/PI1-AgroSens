@@ -1,0 +1,128 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <!-- Container dinâmico onde as abas (Home, Calendário, etc) serão carregadas -->
+    <FrameLayout
+        android:id="@+id/contentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottomBarContainer" />
+
+    <!-- ============ BOTTOM BAR: barra de navegação inferior fixa ============ -->
+    <RelativeLayout
+        android:id="@+id/bottomBarContainer"
+        android:layout_width="match_parent"
+        android:layout_height="115dp"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:id="@+id/bottomBar"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:layout_marginBottom="18dp"
+            android:background="@drawable/bg_bottombar_black"
+            android:elevation="8dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <!-- Calendario -->
+            <LinearLayout
+                android:id="@+id/navCalendario"
+                android:layout_width="0dp" android:layout_height="match_parent"
+                android:layout_weight="1" android:orientation="vertical" android:gravity="center"
+                android:layout_margin="8dp"
+                android:clickable="true" android:focusable="true">
+                <ImageView android:layout_width="24dp" android:layout_height="24dp"
+                    android:src="@drawable/calendario"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:text="Calendario" android:textSize="11sp" android:textColor="#FFFFFF"/>
+            </LinearLayout>
+
+            <!-- Geral -->
+            <LinearLayout
+                android:id="@+id/navGeral"
+                android:layout_width="0dp" android:layout_height="match_parent"
+                android:layout_weight="1" android:orientation="vertical" android:gravity="center"
+                android:layout_margin="8dp"
+                android:clickable="true" android:focusable="true">
+                <ImageView android:layout_width="24dp" android:layout_height="24dp"
+                    android:src="@drawable/geral"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:text="Geral" android:textSize="11sp" android:textColor="#FFFFFF"/>
+            </LinearLayout>
+
+            <!-- Espaço reservado para o botão central flutuante -->
+            <View
+                android:layout_width="65dp"
+                android:layout_height="match_parent"/>
+
+            <!-- Mapa -->
+            <LinearLayout
+                android:id="@+id/navMapa"
+                android:layout_width="0dp" android:layout_height="match_parent"
+                android:layout_weight="1" android:orientation="vertical" android:gravity="center"
+                android:layout_margin="8dp"
+                android:clickable="true" android:focusable="true">
+                <ImageView android:layout_width="24dp" android:layout_height="24dp"
+                    android:src="@drawable/mapa"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:text="Mapa" android:textSize="11sp" android:textColor="#FFFFFF"/>
+            </LinearLayout>
+
+            <!-- Perfil -->
+            <LinearLayout
+                android:id="@+id/navPerfil"
+                android:layout_width="0dp" android:layout_height="match_parent"
+                android:layout_weight="1" android:orientation="vertical" android:gravity="center"
+                android:layout_margin="8dp"
+                android:clickable="true" android:focusable="true">
+                <ImageView android:layout_width="24dp" android:layout_height="24dp"
+                    android:src="@drawable/perfil"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:text="Perfil" android:textSize="11sp" android:textColor="#FFFFFF"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- BOTÃO CENTRAL FLUTUANTE (Home / Início) -->
+        <FrameLayout
+            android:id="@+id/btnCentral"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="48dp"
+            android:background="@drawable/bg_circle_white"
+            android:padding="5dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:elevation="12dp">
+
+            <FrameLayout
+                android:id="@+id/centralCircleBg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_circle_green">
+
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_logo_leaf"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"/>
+            </FrameLayout>
+        </FrameLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

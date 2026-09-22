@@ -1,0 +1,5 @@
+<api>
+  <acw-types partial-assembly-name="Xamarin.AndroidX.Lifecycle.ViewModelSavedState.Android" module-name="Xamarin.AndroidX.Lifecycle.ViewModelSavedState.Android.dll">
+    <type assembly-qualified-name="AndroidX.Lifecycle.ViewModels.ViewModelStoreProvider+IReferenceToken, Xamarin.AndroidX.Lifecycle.ViewModelSavedState.Android, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" compat-jni-name="androidx.lifecycle.viewmodel.ViewModelStoreProvider$ReferenceToken" java-key="androidx.lifecycle.viewmodel.ViewModelStoreProvider$ReferenceToken" managed-key="AndroidX.Lifecycle.ViewModels.ViewModelStoreProvider.IReferenceToken" partial-assembly-qualified-name="AndroidX.Lifecycle.ViewModels.ViewModelStoreProvider+IReferenceToken, Xamarin.AndroidX.Lifecycle.ViewModelSavedState.Android" />
+  </acw-types>
+</api>

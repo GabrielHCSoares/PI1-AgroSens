@@ -1,0 +1,56 @@
+<api type="debug" assembly-name="Xamarin.KotlinX.AtomicFU.Jvm" mvid="dd25f63b3dee416fb20c93e860d98402">
+  <java-to-managed>
+    <entry java-name="kotlinx/atomicfu/AtomicArray" managed-name="KotlinX.AtomicFU.AtomicArray, Xamarin.KotlinX.AtomicFU.Jvm" managed-type-token-id="33554442" />
+    <entry java-name="kotlinx/atomicfu/AtomicBoolean" managed-name="KotlinX.AtomicFU.AtomicBoolean, Xamarin.KotlinX.AtomicFU.Jvm" managed-type-token-id="33554443" />
+    <entry java-name="kotlinx/atomicfu/AtomicBooleanArray" managed-name="KotlinX.AtomicFU.AtomicBooleanArray, Xamarin.KotlinX.AtomicFU.Jvm" managed-type-token-id="33554444" />
+    <entry java-name="kotlinx/atomicfu/AtomicFU" managed-name="KotlinX.AtomicFU.AtomicFU, Xamarin.KotlinX.AtomicFU.Jvm" managed-type-token-id="33554445" />
+    <entry java-name="kotlinx/atomicfu/AtomicFU_commonKt" managed-name="KotlinX.AtomicFU.AtomicFU_commonKt, Xamarin.KotlinX.AtomicFU.Jvm" managed-type-token-id="33554446" />
+    <entry java-name="kotlinx/atomicfu/AtomicInt" managed-name="KotlinX.AtomicFU.AtomicInt, Xamarin.KotlinX.AtomicFU.Jvm" managed-type-token-id="33554447" />
+    <entry java-name="kotlinx/atomicfu/AtomicIntArray" managed-name="KotlinX.AtomicFU.AtomicIntArray, Xamarin.KotlinX.AtomicFU.Jvm" managed-type-token-id="33554448" />
+    <entry java-name="kotlinx/atomicfu/AtomicLong" managed-name="KotlinX.AtomicFU.AtomicLong, Xamarin.KotlinX.AtomicFU.Jvm" managed-type-token-id="33554449" />
+    <entry java-name="kotlinx/atomicfu/AtomicLongArray" managed-name="KotlinX.AtomicFU.AtomicLongArray, Xamarin.KotlinX.AtomicFU.Jvm" managed-type-token-id="33554450" />
+    <entry java-name="kotlinx/atomicfu/AtomicRef" managed-name="KotlinX.AtomicFU.AtomicRef, Xamarin.KotlinX.AtomicFU.Jvm" managed-type-token-id="33554451" />
+    <entry java-name="kotlinx/atomicfu/MangledJsNamesKt" managed-name="KotlinX.AtomicFU.MangledJsNamesKt, Xamarin.KotlinX.AtomicFU.Jvm" managed-type-token-id="33554452" />
+    <entry java-name="kotlinx/atomicfu/TraceBase" managed-name="KotlinX.AtomicFU.TraceBase, Xamarin.KotlinX.AtomicFU.Jvm" managed-type-token-id="33554453" />
+    <entry java-name="kotlinx/atomicfu/TraceBase$None" managed-name="KotlinX.AtomicFU.TraceBase+None, Xamarin.KotlinX.AtomicFU.Jvm" managed-type-token-id="33554468" />
+    <entry java-name="kotlinx/atomicfu/TraceFormat" managed-name="KotlinX.AtomicFU.TraceFormat, Xamarin.KotlinX.AtomicFU.Jvm" managed-type-token-id="33554454" />
+    <entry java-name="kotlinx/atomicfu/TraceFormatKt" managed-name="KotlinX.AtomicFU.TraceFormatKt, Xamarin.KotlinX.AtomicFU.Jvm" managed-type-token-id="33554455" />
+    <entry java-name="kotlinx/atomicfu/TraceKt" managed-name="KotlinX.AtomicFU.TraceKt, Xamarin.KotlinX.AtomicFU.Jvm" managed-type-token-id="33554456" />
+    <entry java-name="kotlinx/atomicfu/locks/ExperimentalThreadBlockingApi" managed-name="KotlinX.AtomicFU.Locks.IExperimentalThreadBlockingApi, Xamarin.KotlinX.AtomicFU.Jvm" skip-in-java-to-managed="True" managed-type-token-id="33554458" />
+    <entry java-name="kotlinx/atomicfu/locks/ExperimentalThreadBlockingApi" managed-name="KotlinX.AtomicFU.Locks.IExperimentalThreadBlockingApiInvoker, Xamarin.KotlinX.AtomicFU.Jvm" managed-type-token-id="33554459" />
+    <entry java-name="kotlinx/atomicfu/locks/JvmParkingDelegatorKt" managed-name="KotlinX.AtomicFU.Locks.JvmParkingDelegatorKt, Xamarin.KotlinX.AtomicFU.Jvm" managed-type-token-id="33554460" />
+    <entry java-name="kotlinx/atomicfu/locks/ParkingDelegatorKt" managed-name="KotlinX.AtomicFU.Locks.ParkingDelegatorKt, Xamarin.KotlinX.AtomicFU.Jvm" managed-type-token-id="33554461" />
+    <entry java-name="kotlinx/atomicfu/locks/ParkingSupport" managed-name="KotlinX.AtomicFU.Locks.ParkingSupport, Xamarin.KotlinX.AtomicFU.Jvm" managed-type-token-id="33554462" />
+    <entry java-name="kotlinx/atomicfu/locks/ParkingSupportKt" managed-name="KotlinX.AtomicFU.Locks.ParkingSupportKt, Xamarin.KotlinX.AtomicFU.Jvm" managed-type-token-id="33554463" />
+    <entry java-name="kotlinx/atomicfu/locks/SynchronizedKt" managed-name="KotlinX.AtomicFU.Locks.SynchronizedKt, Xamarin.KotlinX.AtomicFU.Jvm" managed-type-token-id="33554464" />
+    <entry java-name="kotlinx/atomicfu/locks/SynchronousMutex" managed-name="KotlinX.AtomicFU.Locks.SynchronousMutex, Xamarin.KotlinX.AtomicFU.Jvm" managed-type-token-id="33554465" />
+    <entry java-name="kotlinx/atomicfu/locks/SynchronousMutexKt" managed-name="KotlinX.AtomicFU.Locks.SynchronousMutexKt, Xamarin.KotlinX.AtomicFU.Jvm" managed-type-token-id="33554466" />
+  </java-to-managed>
+  <managed-to-java>
+    <entry java-name="kotlinx/atomicfu/AtomicArray" managed-name="KotlinX.AtomicFU.AtomicArray, Xamarin.KotlinX.AtomicFU.Jvm" managed-type-token-id="33554442" />
+    <entry java-name="kotlinx/atomicfu/AtomicBoolean" managed-name="KotlinX.AtomicFU.AtomicBoolean, Xamarin.KotlinX.AtomicFU.Jvm" managed-type-token-id="33554443" />
+    <entry java-name="kotlinx/atomicfu/AtomicBooleanArray" managed-name="KotlinX.AtomicFU.AtomicBooleanArray, Xamarin.KotlinX.AtomicFU.Jvm" managed-type-token-id="33554444" />
+    <entry java-name="kotlinx/atomicfu/AtomicFU" managed-name="KotlinX.AtomicFU.AtomicFU, Xamarin.KotlinX.AtomicFU.Jvm" managed-type-token-id="33554445" />
+    <entry java-name="kotlinx/atomicfu/AtomicFU_commonKt" managed-name="KotlinX.AtomicFU.AtomicFU_commonKt, Xamarin.KotlinX.AtomicFU.Jvm" managed-type-token-id="33554446" />
+    <entry java-name="kotlinx/atomicfu/AtomicInt" managed-name="KotlinX.AtomicFU.AtomicInt, Xamarin.KotlinX.AtomicFU.Jvm" managed-type-token-id="33554447" />
+    <entry java-name="kotlinx/atomicfu/AtomicIntArray" managed-name="KotlinX.AtomicFU.AtomicIntArray, Xamarin.KotlinX.AtomicFU.Jvm" managed-type-token-id="33554448" />
+    <entry java-name="kotlinx/atomicfu/AtomicLong" managed-name="KotlinX.AtomicFU.AtomicLong, Xamarin.KotlinX.AtomicFU.Jvm" managed-type-token-id="33554449" />
+    <entry java-name="kotlinx/atomicfu/AtomicLongArray" managed-name="KotlinX.AtomicFU.AtomicLongArray, Xamarin.KotlinX.AtomicFU.Jvm" managed-type-token-id="33554450" />
+    <entry java-name="kotlinx/atomicfu/AtomicRef" managed-name="KotlinX.AtomicFU.AtomicRef, Xamarin.KotlinX.AtomicFU.Jvm" managed-type-token-id="33554451" />
+    <entry java-name="kotlinx/atomicfu/MangledJsNamesKt" managed-name="KotlinX.AtomicFU.MangledJsNamesKt, Xamarin.KotlinX.AtomicFU.Jvm" managed-type-token-id="33554452" />
+    <entry java-name="kotlinx/atomicfu/TraceBase" managed-name="KotlinX.AtomicFU.TraceBase, Xamarin.KotlinX.AtomicFU.Jvm" managed-type-token-id="33554453" />
+    <entry java-name="kotlinx/atomicfu/TraceBase$None" managed-name="KotlinX.AtomicFU.TraceBase+None, Xamarin.KotlinX.AtomicFU.Jvm" managed-type-token-id="33554468" />
+    <entry java-name="kotlinx/atomicfu/TraceFormat" managed-name="KotlinX.AtomicFU.TraceFormat, Xamarin.KotlinX.AtomicFU.Jvm" managed-type-token-id="33554454" />
+    <entry java-name="kotlinx/atomicfu/TraceFormatKt" managed-name="KotlinX.AtomicFU.TraceFormatKt, Xamarin.KotlinX.AtomicFU.Jvm" managed-type-token-id="33554455" />
+    <entry java-name="kotlinx/atomicfu/TraceKt" managed-name="KotlinX.AtomicFU.TraceKt, Xamarin.KotlinX.AtomicFU.Jvm" managed-type-token-id="33554456" />
+    <entry java-name="kotlinx/atomicfu/locks/ExperimentalThreadBlockingApi" managed-name="KotlinX.AtomicFU.Locks.IExperimentalThreadBlockingApi, Xamarin.KotlinX.AtomicFU.Jvm" skip-in-java-to-managed="True" managed-type-token-id="33554458" />
+    <entry java-name="kotlinx/atomicfu/locks/ExperimentalThreadBlockingApi" managed-name="KotlinX.AtomicFU.Locks.IExperimentalThreadBlockingApiInvoker, Xamarin.KotlinX.AtomicFU.Jvm" managed-type-token-id="33554459" />
+    <entry java-name="kotlinx/atomicfu/locks/JvmParkingDelegatorKt" managed-name="KotlinX.AtomicFU.Locks.JvmParkingDelegatorKt, Xamarin.KotlinX.AtomicFU.Jvm" managed-type-token-id="33554460" />
+    <entry java-name="kotlinx/atomicfu/locks/ParkingDelegatorKt" managed-name="KotlinX.AtomicFU.Locks.ParkingDelegatorKt, Xamarin.KotlinX.AtomicFU.Jvm" managed-type-token-id="33554461" />
+    <entry java-name="kotlinx/atomicfu/locks/ParkingSupport" managed-name="KotlinX.AtomicFU.Locks.ParkingSupport, Xamarin.KotlinX.AtomicFU.Jvm" managed-type-token-id="33554462" />
+    <entry java-name="kotlinx/atomicfu/locks/ParkingSupportKt" managed-name="KotlinX.AtomicFU.Locks.ParkingSupportKt, Xamarin.KotlinX.AtomicFU.Jvm" managed-type-token-id="33554463" />
+    <entry java-name="kotlinx/atomicfu/locks/SynchronizedKt" managed-name="KotlinX.AtomicFU.Locks.SynchronizedKt, Xamarin.KotlinX.AtomicFU.Jvm" managed-type-token-id="33554464" />
+    <entry java-name="kotlinx/atomicfu/locks/SynchronousMutex" managed-name="KotlinX.AtomicFU.Locks.SynchronousMutex, Xamarin.KotlinX.AtomicFU.Jvm" managed-type-token-id="33554465" />
+    <entry java-name="kotlinx/atomicfu/locks/SynchronousMutexKt" managed-name="KotlinX.AtomicFU.Locks.SynchronousMutexKt, Xamarin.KotlinX.AtomicFU.Jvm" managed-type-token-id="33554466" />
+  </managed-to-java>
+</api>

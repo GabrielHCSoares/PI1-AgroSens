@@ -1,0 +1,67 @@
+<api>
+  <jcw-types>
+    <type name="MainActivity" package="com.companyname.agrosens" application_java_class="android.app.Application" mono_runtime_initialization="mono.MonoPackageManager.LoadApplication (context);" extends_type="androidx.appcompat.app.AppCompatActivity" partial_assembly_qualified_name="Agrosens.MainActivity, Agrosens">
+      <constructors>
+        <constructor name="MainActivity" method="n_.ctor:()V:" jni_signature="()V" managed_parameters="" retval="void" is_dynamically_registered="True" />
+        <constructor name="MainActivity" method="n_.ctor:(I)V:" jni_signature="(I)V" managed_parameters="System.Int32, System.Private.CoreLib" params="int p0" retval="void" is_dynamically_registered="True" super_call="p0" activate_call="p0" />
+      </constructors>
+      <methods>
+        <method name="onCreate" method="n_onCreate:(Landroid/os/Bundle;)V:GetOnCreate_Landroid_os_Bundle_Handler" jni_signature="(Landroid/os/Bundle;)V" params="android.os.Bundle p0" retval="void" is_dynamically_registered="True" super_call="p0" activate_call="p0" />
+      </methods>
+    </type>
+    <type name="AddEventBottomSheet" package="crc648cf713a3b609d12a" application_java_class="android.app.Application" mono_runtime_initialization="mono.MonoPackageManager.LoadApplication (context);" extends_type="com.google.android.material.bottomsheet.BottomSheetDialogFragment" partial_assembly_qualified_name="Agrosens.Views.AddEventBottomSheet, Agrosens">
+      <constructors>
+        <constructor name="AddEventBottomSheet" method="n_.ctor:()V:" jni_signature="()V" managed_parameters="" retval="void" is_dynamically_registered="True" />
+        <constructor name="AddEventBottomSheet" method="n_.ctor:(I)V:" jni_signature="(I)V" managed_parameters="System.Int32, System.Private.CoreLib" params="int p0" retval="void" is_dynamically_registered="True" super_call="p0" activate_call="p0" />
+      </constructors>
+      <methods>
+        <method name="onCreateView" method="n_onCreateView:(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;:GetOnCreateView_Landroid_view_LayoutInflater_Landroid_view_ViewGroup_Landroid_os_Bundle_Handler" jni_signature="(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;" params="android.view.LayoutInflater p0, android.view.ViewGroup p1, android.os.Bundle p2" retval="android.view.View" is_dynamically_registered="True" super_call="p0, p1, p2" activate_call="p0, p1, p2" />
+        <method name="onViewCreated" method="n_onViewCreated:(Landroid/view/View;Landroid/os/Bundle;)V:GetOnViewCreated_Landroid_view_View_Landroid_os_Bundle_Handler" jni_signature="(Landroid/view/View;Landroid/os/Bundle;)V" params="android.view.View p0, android.os.Bundle p1" retval="void" is_dynamically_registered="True" super_call="p0, p1" activate_call="p0, p1" />
+      </methods>
+    </type>
+    <type name="CalendarFragment" package="crc648cf713a3b609d12a" application_java_class="android.app.Application" mono_runtime_initialization="mono.MonoPackageManager.LoadApplication (context);" extends_type="androidx.fragment.app.Fragment" partial_assembly_qualified_name="Agrosens.Views.CalendarFragment, Agrosens">
+      <constructors>
+        <constructor name="CalendarFragment" method="n_.ctor:()V:" jni_signature="()V" managed_parameters="" retval="void" is_dynamically_registered="True" />
+        <constructor name="CalendarFragment" method="n_.ctor:(I)V:" jni_signature="(I)V" managed_parameters="System.Int32, System.Private.CoreLib" params="int p0" retval="void" is_dynamically_registered="True" super_call="p0" activate_call="p0" />
+      </constructors>
+      <methods>
+        <method name="onCreateView" method="n_onCreateView:(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;:GetOnCreateView_Landroid_view_LayoutInflater_Landroid_view_ViewGroup_Landroid_os_Bundle_Handler" jni_signature="(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;" params="android.view.LayoutInflater p0, android.view.ViewGroup p1, android.os.Bundle p2" retval="android.view.View" is_dynamically_registered="True" super_call="p0, p1, p2" activate_call="p0, p1, p2" />
+      </methods>
+    </type>
+    <type name="GeralFragment" package="crc648cf713a3b609d12a" application_java_class="android.app.Application" mono_runtime_initialization="mono.MonoPackageManager.LoadApplication (context);" extends_type="androidx.fragment.app.Fragment" partial_assembly_qualified_name="Agrosens.Views.GeralFragment, Agrosens">
+      <constructors>
+        <constructor name="GeralFragment" method="n_.ctor:()V:" jni_signature="()V" managed_parameters="" retval="void" is_dynamically_registered="True" />
+        <constructor name="GeralFragment" method="n_.ctor:(I)V:" jni_signature="(I)V" managed_parameters="System.Int32, System.Private.CoreLib" params="int p0" retval="void" is_dynamically_registered="True" super_call="p0" activate_call="p0" />
+      </constructors>
+      <methods>
+        <method name="onCreateView" method="n_onCreateView:(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;:GetOnCreateView_Landroid_view_LayoutInflater_Landroid_view_ViewGroup_Landroid_os_Bundle_Handler" jni_signature="(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;" params="android.view.LayoutInflater p0, android.view.ViewGroup p1, android.os.Bundle p2" retval="android.view.View" is_dynamically_registered="True" super_call="p0, p1, p2" activate_call="p0, p1, p2" />
+      </methods>
+    </type>
+    <type name="HomeFragment" package="crc648cf713a3b609d12a" application_java_class="android.app.Application" mono_runtime_initialization="mono.MonoPackageManager.LoadApplication (context);" extends_type="androidx.fragment.app.Fragment" partial_assembly_qualified_name="Agrosens.Views.HomeFragment, Agrosens">
+      <constructors>
+        <constructor name="HomeFragment" method="n_.ctor:()V:" jni_signature="()V" managed_parameters="" retval="void" is_dynamically_registered="True" />
+        <constructor name="HomeFragment" method="n_.ctor:(I)V:" jni_signature="(I)V" managed_parameters="System.Int32, System.Private.CoreLib" params="int p0" retval="void" is_dynamically_registered="True" super_call="p0" activate_call="p0" />
+      </constructors>
+      <methods>
+        <method name="onCreateView" method="n_onCreateView:(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;:GetOnCreateView_Landroid_view_LayoutInflater_Landroid_view_ViewGroup_Landroid_os_Bundle_Handler" jni_signature="(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;" params="android.view.LayoutInflater p0, android.view.ViewGroup p1, android.os.Bundle p2" retval="android.view.View" is_dynamically_registered="True" super_call="p0, p1, p2" activate_call="p0, p1, p2" />
+      </methods>
+    </type>
+    <type name="PerfilFragment" package="crc648cf713a3b609d12a" application_java_class="android.app.Application" mono_runtime_initialization="mono.MonoPackageManager.LoadApplication (context);" extends_type="androidx.fragment.app.Fragment" partial_assembly_qualified_name="Agrosens.Views.PerfilFragment, Agrosens">
+      <constructors>
+        <constructor name="PerfilFragment" method="n_.ctor:()V:" jni_signature="()V" managed_parameters="" retval="void" is_dynamically_registered="True" />
+        <constructor name="PerfilFragment" method="n_.ctor:(I)V:" jni_signature="(I)V" managed_parameters="System.Int32, System.Private.CoreLib" params="int p0" retval="void" is_dynamically_registered="True" super_call="p0" activate_call="p0" />
+      </constructors>
+      <methods>
+        <method name="onCreateView" method="n_onCreateView:(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;:GetOnCreateView_Landroid_view_LayoutInflater_Landroid_view_ViewGroup_Landroid_os_Bundle_Handler" jni_signature="(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;" params="android.view.LayoutInflater p0, android.view.ViewGroup p1, android.os.Bundle p2" retval="android.view.View" is_dynamically_registered="True" super_call="p0, p1, p2" activate_call="p0, p1, p2" />
+      </methods>
+    </type>
+  </jcw-types>
+  <acw-types partial-assembly-name="Agrosens" module-name="Agrosens.dll">
+    <type assembly-qualified-name="Agrosens.MainActivity, Agrosens, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" compat-jni-name="com.companyname.agrosens.MainActivity" java-key="com.companyname.agrosens.MainActivity" managed-key="Agrosens.MainActivity" partial-assembly-qualified-name="Agrosens.MainActivity, Agrosens" />
+    <type assembly-qualified-name="Agrosens.Views.AddEventBottomSheet, Agrosens, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" compat-jni-name="agrosens.views.AddEventBottomSheet" java-key="crc648cf713a3b609d12a.AddEventBottomSheet" managed-key="Agrosens.Views.AddEventBottomSheet" partial-assembly-qualified-name="Agrosens.Views.AddEventBottomSheet, Agrosens" />
+    <type assembly-qualified-name="Agrosens.Views.CalendarFragment, Agrosens, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" compat-jni-name="agrosens.views.CalendarFragment" java-key="crc648cf713a3b609d12a.CalendarFragment" managed-key="Agrosens.Views.CalendarFragment" partial-assembly-qualified-name="Agrosens.Views.CalendarFragment, Agrosens" />
+    <type assembly-qualified-name="Agrosens.Views.GeralFragment, Agrosens, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" compat-jni-name="agrosens.views.GeralFragment" java-key="crc648cf713a3b609d12a.GeralFragment" managed-key="Agrosens.Views.GeralFragment" partial-assembly-qualified-name="Agrosens.Views.GeralFragment, Agrosens" />
+    <type assembly-qualified-name="Agrosens.Views.HomeFragment, Agrosens, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" compat-jni-name="agrosens.views.HomeFragment" java-key="crc648cf713a3b609d12a.HomeFragment" managed-key="Agrosens.Views.HomeFragment" partial-assembly-qualified-name="Agrosens.Views.HomeFragment, Agrosens" />
+    <type assembly-qualified-name="Agrosens.Views.PerfilFragment, Agrosens, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" compat-jni-name="agrosens.views.PerfilFragment" java-key="crc648cf713a3b609d12a.PerfilFragment" managed-key="Agrosens.Views.PerfilFragment" partial-assembly-qualified-name="Agrosens.Views.PerfilFragment, Agrosens" />
+  </acw-types>
+</api>

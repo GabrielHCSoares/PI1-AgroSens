@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:fillViewport="true">
+
+	<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:paddingTop="50dp"
+        android:paddingBottom="30dp">
+
+		<!-- Título -->
+		<TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Meu Perfil"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#2E7D32"
+            android:gravity="center"
+            android:layout_marginBottom="24dp"/>
+
+		<!-- Foto + badge verde + nome -->
+		<LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginBottom="36dp">
+
+			<!-- Foto com badge verde no canto inferior direito -->
+			<FrameLayout
+                android:layout_width="100dp"
+                android:layout_height="100dp">
+
+				<!-- Foto do usuário (mesmo drawable da Home) -->
+				<ImageView
+                    android:id="@+id/imgPerfilUser"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/user_photo"
+                    android:scaleType="centerCrop"
+                    android:background="@drawable/bg_circle_avatar"
+                    android:clipToOutline="true"/>
+
+				<!-- Badge verde (bolinha de status) -->
+				<FrameLayout
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_gravity="bottom|right"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginBottom="2dp"
+                    android:background="@drawable/bg_badge_green_border">
+				</FrameLayout>
+			</FrameLayout>
+
+			<!-- Nome do usuário -->
+			<TextView
+                android:id="@+id/txtPerfilName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="João Francisco"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#1B3A24"/>
+		</LinearLayout>
+
+		<!-- ===== Lista de itens do menu ===== -->
+
+		<!-- Perfil -->
+		<LinearLayout
+            android:id="@+id/menuProfile"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="4dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="?attr/selectableItemBackground">
+
+			<ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/ic_menu_profile"/>
+
+			<TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="16dp"
+                android:text="Perfil"
+                android:textSize="15sp"
+                android:textColor="#1B3A24"/>
+
+			<ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_chevron_right_green"/>
+		</LinearLayout>
+
+		<View android:layout_width="match_parent" android:layout_height="1dp" android:background="#F0F4F1" android:layout_marginBottom="4dp"/>
+
+		<!-- Política de privacidade -->
+		<LinearLayout
+            android:id="@+id/menuPrivacy"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="4dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="?attr/selectableItemBackground">
+
+			<ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/ic_menu_privacy"/>
+
+			<TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="16dp"
+                android:text="Política de privacidade"
+                android:textSize="15sp"
+                android:textColor="#1B3A24"/>
+
+			<ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_chevron_right_green"/>
+		</LinearLayout>
+
+		<View android:layout_width="match_parent" android:layout_height="1dp" android:background="#F0F4F1" android:layout_marginBottom="4dp"/>
+
+		<!-- Configuração -->
+		<LinearLayout
+            android:id="@+id/menuSettings"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="4dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="?attr/selectableItemBackground">
+
+			<ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/ic_menu_settings"/>
+
+			<TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="16dp"
+                android:text="Configuração"
+                android:textSize="15sp"
+                android:textColor="#1B3A24"/>
+
+			<ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_chevron_right_green"/>
+		</LinearLayout>
+
+		<View android:layout_width="match_parent" android:layout_height="1dp" android:background="#F0F4F1" android:layout_marginBottom="4dp"/>
+
+		<!-- Sobre nós -->
+		<LinearLayout
+            android:id="@+id/menuHelp"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="4dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="?attr/selectableItemBackground">
+
+			<ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/ic_menu_help"/>
+
+			<TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="16dp"
+                android:text="Sobre nós"
+                android:textSize="15sp"
+                android:textColor="#1B3A24"/>
+
+			<ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_chevron_right_green"/>
+		</LinearLayout>
+
+		<View android:layout_width="match_parent" android:layout_height="1dp" android:background="#F0F4F1" android:layout_marginBottom="4dp"/>
+
+		<!-- Logout (sem seta) -->
+		<LinearLayout
+            android:id="@+id/menuLogout"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="?attr/selectableItemBackground">
+
+			<ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/ic_menu_logout"/>
+
+			<TextView
+                android:id="@+id/txtMenuLogout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:text="Logout"
+                android:textSize="15sp"
+                android:textColor="#1B3A24"/>
+		</LinearLayout>
+
+	</LinearLayout>
+</ScrollView>

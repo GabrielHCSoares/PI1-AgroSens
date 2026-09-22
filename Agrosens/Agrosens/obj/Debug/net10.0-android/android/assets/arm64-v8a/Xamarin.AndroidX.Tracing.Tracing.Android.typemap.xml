@@ -1,0 +1,148 @@
+<api type="debug" assembly-name="Xamarin.AndroidX.Tracing.Tracing.Android" mvid="c7772bc709254d6a878d6e424f3c6a7d">
+  <java-to-managed>
+    <entry java-name="androidx/tracing/AbstractTraceDriver" managed-name="AndroidX.Tracing.AbstractTraceDriver, Xamarin.AndroidX.Tracing.Tracing.Android" managed-type-token-id="33554454" />
+    <entry java-name="androidx/tracing/AbstractTraceDriver$Factory" managed-name="AndroidX.Tracing.AbstractTraceDriver+IFactory, Xamarin.AndroidX.Tracing.Tracing.Android" skip-in-java-to-managed="True" managed-type-token-id="33554525" />
+    <entry java-name="androidx/tracing/AbstractTraceDriver$Factory" managed-name="AndroidX.Tracing.AbstractTraceDriver+IFactoryInvoker, Xamarin.AndroidX.Tracing.Tracing.Android" managed-type-token-id="33554526" />
+    <entry java-name="androidx/tracing/AbstractTraceDriver" managed-name="AndroidX.Tracing.AbstractTraceDriverInvoker, Xamarin.AndroidX.Tracing.Tracing.Android" managed-type-token-id="33554455" />
+    <entry java-name="androidx/tracing/AbstractTraceSink" managed-name="AndroidX.Tracing.AbstractTraceSink, Xamarin.AndroidX.Tracing.Tracing.Android" managed-type-token-id="33554456" />
+    <entry java-name="androidx/tracing/AbstractTraceSink" managed-name="AndroidX.Tracing.AbstractTraceSinkInvoker, Xamarin.AndroidX.Tracing.Tracing.Android" managed-type-token-id="33554457" />
+    <entry java-name="androidx/tracing/AtomicBoolean_androidKt" managed-name="AndroidX.Tracing.AtomicBoolean_androidKt, Xamarin.AndroidX.Tracing.Tracing.Android" managed-type-token-id="33554458" />
+    <entry java-name="androidx/tracing/AtomicInteger_androidKt" managed-name="AndroidX.Tracing.AtomicInteger_androidKt, Xamarin.AndroidX.Tracing.Tracing.Android" managed-type-token-id="33554459" />
+    <entry java-name="androidx/tracing/AtomicLongKt" managed-name="AndroidX.Tracing.AtomicLongKt, Xamarin.AndroidX.Tracing.Tracing.Android" managed-type-token-id="33554460" />
+    <entry java-name="androidx/tracing/AtomicLong_androidKt" managed-name="AndroidX.Tracing.AtomicLong_androidKt, Xamarin.AndroidX.Tracing.Tracing.Android" managed-type-token-id="33554461" />
+    <entry java-name="androidx/tracing/AttributeEntry" managed-name="AndroidX.Tracing.AttributeEntry, Xamarin.AndroidX.Tracing.Tracing.Android" managed-type-token-id="33554462" />
+    <entry java-name="androidx/tracing/ClockSource_androidKt" managed-name="AndroidX.Tracing.ClockSource_androidKt, Xamarin.AndroidX.Tracing.Tracing.Android" managed-type-token-id="33554463" />
+    <entry java-name="androidx/tracing/CommonKt" managed-name="AndroidX.Tracing.CommonKt, Xamarin.AndroidX.Tracing.Tracing.Android" managed-type-token-id="33554464" />
+    <entry java-name="androidx/tracing/ContextElements_jvmAndAndroidKt" managed-name="AndroidX.Tracing.ContextElements_jvmAndAndroidKt, Xamarin.AndroidX.Tracing.Tracing.Android" managed-type-token-id="33554465" />
+    <entry java-name="androidx/tracing/CounterTrack" managed-name="AndroidX.Tracing.CounterTrack, Xamarin.AndroidX.Tracing.Tracing.Android" managed-type-token-id="33554466" />
+    <entry java-name="androidx/tracing/CounterTrackKt" managed-name="AndroidX.Tracing.CounterTrackKt, Xamarin.AndroidX.Tracing.Tracing.Android" managed-type-token-id="33554467" />
+    <entry java-name="androidx/tracing/EmptyTraceContext" managed-name="AndroidX.Tracing.EmptyTraceContext, Xamarin.AndroidX.Tracing.Tracing.Android" managed-type-token-id="33554469" />
+    <entry java-name="androidx/tracing/EmptyTraceSink" managed-name="AndroidX.Tracing.EmptyTraceSink, Xamarin.AndroidX.Tracing.Tracing.Android" managed-type-token-id="33554470" />
+    <entry java-name="androidx/tracing/EventMetadata" managed-name="AndroidX.Tracing.EventMetadata, Xamarin.AndroidX.Tracing.Tracing.Android" managed-type-token-id="33554471" />
+    <entry java-name="androidx/tracing/EventMetadata" managed-name="AndroidX.Tracing.EventMetadataInvoker, Xamarin.AndroidX.Tracing.Tracing.Android" managed-type-token-id="33554472" />
+    <entry java-name="androidx/tracing/EventMetadataCloseable" managed-name="AndroidX.Tracing.EventMetadataCloseable, Xamarin.AndroidX.Tracing.Tracing.Android" managed-type-token-id="33554473" />
+    <entry java-name="androidx/tracing/EventMetadataCloseableKt" managed-name="AndroidX.Tracing.EventMetadataCloseableKt, Xamarin.AndroidX.Tracing.Tracing.Android" managed-type-token-id="33554474" />
+    <entry java-name="androidx/tracing/Frame" managed-name="AndroidX.Tracing.Frame, Xamarin.AndroidX.Tracing.Tracing.Android" managed-type-token-id="33554476" />
+    <entry java-name="androidx/tracing/FrameKt" managed-name="AndroidX.Tracing.FrameKt, Xamarin.AndroidX.Tracing.Tracing.Android" managed-type-token-id="33554477" />
+    <entry java-name="androidx/tracing/Counter" managed-name="AndroidX.Tracing.ICounter, Xamarin.AndroidX.Tracing.Tracing.Android" skip-in-java-to-managed="True" managed-type-token-id="33554478" />
+    <entry java-name="androidx/tracing/Counter" managed-name="AndroidX.Tracing.ICounterInvoker, Xamarin.AndroidX.Tracing.Tracing.Android" managed-type-token-id="33554479" />
+    <entry java-name="androidx/tracing/DelicateTracingApi" managed-name="AndroidX.Tracing.IDelicateTracingApi, Xamarin.AndroidX.Tracing.Tracing.Android" skip-in-java-to-managed="True" managed-type-token-id="33554480" />
+    <entry java-name="androidx/tracing/DelicateTracingApi" managed-name="AndroidX.Tracing.IDelicateTracingApiInvoker, Xamarin.AndroidX.Tracing.Tracing.Android" managed-type-token-id="33554481" />
+    <entry java-name="androidx/tracing/ExperimentalContextPropagation" managed-name="AndroidX.Tracing.IExperimentalContextPropagation, Xamarin.AndroidX.Tracing.Tracing.Android" skip-in-java-to-managed="True" managed-type-token-id="33554482" />
+    <entry java-name="androidx/tracing/ExperimentalContextPropagation" managed-name="AndroidX.Tracing.IExperimentalContextPropagationInvoker, Xamarin.AndroidX.Tracing.Tracing.Android" managed-type-token-id="33554483" />
+    <entry java-name="androidx/tracing/PropagationToken" managed-name="AndroidX.Tracing.IPropagationToken, Xamarin.AndroidX.Tracing.Tracing.Android" skip-in-java-to-managed="True" managed-type-token-id="33554484" />
+    <entry java-name="androidx/tracing/PropagationToken" managed-name="AndroidX.Tracing.IPropagationTokenInvoker, Xamarin.AndroidX.Tracing.Tracing.Android" managed-type-token-id="33554485" />
+    <entry java-name="androidx/tracing/MetadataEntry" managed-name="AndroidX.Tracing.MetadataEntry, Xamarin.AndroidX.Tracing.Tracing.Android" managed-type-token-id="33554486" />
+    <entry java-name="androidx/tracing/MetadataEntryKt" managed-name="AndroidX.Tracing.MetadataEntryKt, Xamarin.AndroidX.Tracing.Tracing.Android" managed-type-token-id="33554487" />
+    <entry java-name="androidx/tracing/MetaTraceKt" managed-name="AndroidX.Tracing.MetaTraceKt, Xamarin.AndroidX.Tracing.Tracing.Android" managed-type-token-id="33554488" />
+    <entry java-name="androidx/tracing/PerfettoTracer" managed-name="AndroidX.Tracing.PerfettoTracer, Xamarin.AndroidX.Tracing.Tracing.Android" managed-type-token-id="33554489" />
+    <entry java-name="androidx/tracing/PerfettoTracer_androidKt" managed-name="AndroidX.Tracing.PerfettoTracer_androidKt, Xamarin.AndroidX.Tracing.Tracing.Android" managed-type-token-id="33554490" />
+    <entry java-name="androidx/tracing/PlatformThreadContextElement" managed-name="AndroidX.Tracing.PlatformThreadContextElement, Xamarin.AndroidX.Tracing.Tracing.Android" managed-type-token-id="33554491" />
+    <entry java-name="androidx/tracing/PlatformThreadContextElement" managed-name="AndroidX.Tracing.PlatformThreadContextElementInvoker, Xamarin.AndroidX.Tracing.Tracing.Android" managed-type-token-id="33554492" />
+    <entry java-name="androidx/tracing/Poolable" managed-name="AndroidX.Tracing.Poolable, Xamarin.AndroidX.Tracing.Tracing.Android" managed-type-token-id="33554493" />
+    <entry java-name="androidx/tracing/Poolable" managed-name="AndroidX.Tracing.PoolableInvoker, Xamarin.AndroidX.Tracing.Tracing.Android" managed-type-token-id="33554494" />
+    <entry java-name="androidx/tracing/PooledTracePacketArray" managed-name="AndroidX.Tracing.PooledTracePacketArray, Xamarin.AndroidX.Tracing.Tracing.Android" managed-type-token-id="33554495" />
+    <entry java-name="androidx/tracing/ProcessTrack" managed-name="AndroidX.Tracing.ProcessTrack, Xamarin.AndroidX.Tracing.Tracing.Android" managed-type-token-id="33554496" />
+    <entry java-name="androidx/tracing/ProcessTrackKt" managed-name="AndroidX.Tracing.ProcessTrackKt, Xamarin.AndroidX.Tracing.Tracing.Android" managed-type-token-id="33554497" />
+    <entry java-name="androidx/tracing/PropagationUnsupportedToken" managed-name="AndroidX.Tracing.PropagationUnsupportedToken, Xamarin.AndroidX.Tracing.Tracing.Android" managed-type-token-id="33554498" />
+    <entry java-name="androidx/tracing/ProtoPoolKt" managed-name="AndroidX.Tracing.ProtoPoolKt, Xamarin.AndroidX.Tracing.Tracing.Android" managed-type-token-id="33554499" />
+    <entry java-name="androidx/tracing/Queue" managed-name="AndroidX.Tracing.Queue, Xamarin.AndroidX.Tracing.Tracing.Android" managed-type-token-id="33554500" />
+    <entry java-name="androidx/tracing/QueueKt" managed-name="AndroidX.Tracing.QueueKt, Xamarin.AndroidX.Tracing.Tracing.Android" managed-type-token-id="33554501" />
+    <entry java-name="androidx/tracing/SliceTrack" managed-name="AndroidX.Tracing.SliceTrack, Xamarin.AndroidX.Tracing.Tracing.Android" managed-type-token-id="33554502" />
+    <entry java-name="androidx/tracing/SliceTrack" managed-name="AndroidX.Tracing.SliceTrackInvoker, Xamarin.AndroidX.Tracing.Tracing.Android" managed-type-token-id="33554503" />
+    <entry java-name="androidx/tracing/Synchronized_androidKt" managed-name="AndroidX.Tracing.Synchronized_androidKt, Xamarin.AndroidX.Tracing.Tracing.Android" managed-type-token-id="33554504" />
+    <entry java-name="androidx/tracing/Tasks_androidKt" managed-name="AndroidX.Tracing.Tasks_androidKt, Xamarin.AndroidX.Tracing.Tracing.Android" managed-type-token-id="33554505" />
+    <entry java-name="androidx/tracing/Threads_jvmAndAndroidKt" managed-name="AndroidX.Tracing.Threads_jvmAndAndroidKt, Xamarin.AndroidX.Tracing.Tracing.Android" managed-type-token-id="33554506" />
+    <entry java-name="androidx/tracing/ThreadTrack" managed-name="AndroidX.Tracing.ThreadTrack, Xamarin.AndroidX.Tracing.Tracing.Android" managed-type-token-id="33554507" />
+    <entry java-name="androidx/tracing/ThreadTrackKt" managed-name="AndroidX.Tracing.ThreadTrackKt, Xamarin.AndroidX.Tracing.Tracing.Android" managed-type-token-id="33554508" />
+    <entry java-name="androidx/tracing/Throwables" managed-name="AndroidX.Tracing.Throwables, Xamarin.AndroidX.Tracing.Tracing.Android" managed-type-token-id="33554509" />
+    <entry java-name="androidx/tracing/Trace" managed-name="AndroidX.Tracing.Trace, Xamarin.AndroidX.Tracing.Tracing.Android" managed-type-token-id="33554510" />
+    <entry java-name="androidx/tracing/TraceAttributes" managed-name="AndroidX.Tracing.TraceAttributes, Xamarin.AndroidX.Tracing.Tracing.Android" managed-type-token-id="33554511" />
+    <entry java-name="androidx/tracing/TraceAttributes" managed-name="AndroidX.Tracing.TraceAttributesInvoker, Xamarin.AndroidX.Tracing.Tracing.Android" managed-type-token-id="33554512" />
+    <entry java-name="androidx/tracing/TraceContext" managed-name="AndroidX.Tracing.TraceContext, Xamarin.AndroidX.Tracing.Tracing.Android" managed-type-token-id="33554513" />
+    <entry java-name="androidx/tracing/TraceEvent" managed-name="AndroidX.Tracing.TraceEvent, Xamarin.AndroidX.Tracing.Tracing.Android" managed-type-token-id="33554514" />
+    <entry java-name="androidx/tracing/TraceEventKt" managed-name="AndroidX.Tracing.TraceEventKt, Xamarin.AndroidX.Tracing.Tracing.Android" managed-type-token-id="33554515" />
+    <entry java-name="androidx/tracing/TraceKt" managed-name="AndroidX.Tracing.TraceKt, Xamarin.AndroidX.Tracing.Tracing.Android" managed-type-token-id="33554516" />
+    <entry java-name="androidx/tracing/Tracer" managed-name="AndroidX.Tracing.Tracer, Xamarin.AndroidX.Tracing.Tracing.Android" managed-type-token-id="33554517" />
+    <entry java-name="androidx/tracing/Tracer$Companion" managed-name="AndroidX.Tracing.Tracer+Companion, Xamarin.AndroidX.Tracing.Tracing.Android" managed-type-token-id="33554527" />
+    <entry java-name="androidx/tracing/Tracer" managed-name="AndroidX.Tracing.TracerInvoker, Xamarin.AndroidX.Tracing.Tracing.Android" managed-type-token-id="33554518" />
+    <entry java-name="androidx/tracing/TraceTokens" managed-name="AndroidX.Tracing.TraceTokens, Xamarin.AndroidX.Tracing.Tracing.Android" managed-type-token-id="33554519" />
+    <entry java-name="androidx/tracing/Track" managed-name="AndroidX.Tracing.Track, Xamarin.AndroidX.Tracing.Tracing.Android" managed-type-token-id="33554520" />
+    <entry java-name="androidx/tracing/Track" managed-name="AndroidX.Tracing.TrackInvoker, Xamarin.AndroidX.Tracing.Tracing.Android" managed-type-token-id="33554521" />
+    <entry java-name="androidx/tracing/TrackDescriptor" managed-name="AndroidX.Tracing.TrackDescriptor, Xamarin.AndroidX.Tracing.Tracing.Android" managed-type-token-id="33554522" />
+    <entry java-name="androidx/tracing/TrackDescriptorKt" managed-name="AndroidX.Tracing.TrackDescriptorKt, Xamarin.AndroidX.Tracing.Tracing.Android" managed-type-token-id="33554523" />
+  </java-to-managed>
+  <managed-to-java>
+    <entry java-name="androidx/tracing/AbstractTraceDriver" managed-name="AndroidX.Tracing.AbstractTraceDriver, Xamarin.AndroidX.Tracing.Tracing.Android" managed-type-token-id="33554454" />
+    <entry java-name="androidx/tracing/AbstractTraceDriver$Factory" managed-name="AndroidX.Tracing.AbstractTraceDriver+IFactory, Xamarin.AndroidX.Tracing.Tracing.Android" skip-in-java-to-managed="True" managed-type-token-id="33554525" />
+    <entry java-name="androidx/tracing/AbstractTraceDriver$Factory" managed-name="AndroidX.Tracing.AbstractTraceDriver+IFactoryInvoker, Xamarin.AndroidX.Tracing.Tracing.Android" managed-type-token-id="33554526" />
+    <entry java-name="androidx/tracing/AbstractTraceDriver" managed-name="AndroidX.Tracing.AbstractTraceDriverInvoker, Xamarin.AndroidX.Tracing.Tracing.Android" managed-type-token-id="33554455" />
+    <entry java-name="androidx/tracing/AbstractTraceSink" managed-name="AndroidX.Tracing.AbstractTraceSink, Xamarin.AndroidX.Tracing.Tracing.Android" managed-type-token-id="33554456" />
+    <entry java-name="androidx/tracing/AbstractTraceSink" managed-name="AndroidX.Tracing.AbstractTraceSinkInvoker, Xamarin.AndroidX.Tracing.Tracing.Android" managed-type-token-id="33554457" />
+    <entry java-name="androidx/tracing/AtomicBoolean_androidKt" managed-name="AndroidX.Tracing.AtomicBoolean_androidKt, Xamarin.AndroidX.Tracing.Tracing.Android" managed-type-token-id="33554458" />
+    <entry java-name="androidx/tracing/AtomicInteger_androidKt" managed-name="AndroidX.Tracing.AtomicInteger_androidKt, Xamarin.AndroidX.Tracing.Tracing.Android" managed-type-token-id="33554459" />
+    <entry java-name="androidx/tracing/AtomicLongKt" managed-name="AndroidX.Tracing.AtomicLongKt, Xamarin.AndroidX.Tracing.Tracing.Android" managed-type-token-id="33554460" />
+    <entry java-name="androidx/tracing/AtomicLong_androidKt" managed-name="AndroidX.Tracing.AtomicLong_androidKt, Xamarin.AndroidX.Tracing.Tracing.Android" managed-type-token-id="33554461" />
+    <entry java-name="androidx/tracing/AttributeEntry" managed-name="AndroidX.Tracing.AttributeEntry, Xamarin.AndroidX.Tracing.Tracing.Android" managed-type-token-id="33554462" />
+    <entry java-name="androidx/tracing/ClockSource_androidKt" managed-name="AndroidX.Tracing.ClockSource_androidKt, Xamarin.AndroidX.Tracing.Tracing.Android" managed-type-token-id="33554463" />
+    <entry java-name="androidx/tracing/CommonKt" managed-name="AndroidX.Tracing.CommonKt, Xamarin.AndroidX.Tracing.Tracing.Android" managed-type-token-id="33554464" />
+    <entry java-name="androidx/tracing/ContextElements_jvmAndAndroidKt" managed-name="AndroidX.Tracing.ContextElements_jvmAndAndroidKt, Xamarin.AndroidX.Tracing.Tracing.Android" managed-type-token-id="33554465" />
+    <entry java-name="androidx/tracing/CounterTrack" managed-name="AndroidX.Tracing.CounterTrack, Xamarin.AndroidX.Tracing.Tracing.Android" managed-type-token-id="33554466" />
+    <entry java-name="androidx/tracing/CounterTrackKt" managed-name="AndroidX.Tracing.CounterTrackKt, Xamarin.AndroidX.Tracing.Tracing.Android" managed-type-token-id="33554467" />
+    <entry java-name="androidx/tracing/EmptyTraceContext" managed-name="AndroidX.Tracing.EmptyTraceContext, Xamarin.AndroidX.Tracing.Tracing.Android" managed-type-token-id="33554469" />
+    <entry java-name="androidx/tracing/EmptyTraceSink" managed-name="AndroidX.Tracing.EmptyTraceSink, Xamarin.AndroidX.Tracing.Tracing.Android" managed-type-token-id="33554470" />
+    <entry java-name="androidx/tracing/EventMetadata" managed-name="AndroidX.Tracing.EventMetadata, Xamarin.AndroidX.Tracing.Tracing.Android" managed-type-token-id="33554471" />
+    <entry java-name="androidx/tracing/EventMetadata" managed-name="AndroidX.Tracing.EventMetadataInvoker, Xamarin.AndroidX.Tracing.Tracing.Android" managed-type-token-id="33554472" />
+    <entry java-name="androidx/tracing/EventMetadataCloseable" managed-name="AndroidX.Tracing.EventMetadataCloseable, Xamarin.AndroidX.Tracing.Tracing.Android" managed-type-token-id="33554473" />
+    <entry java-name="androidx/tracing/EventMetadataCloseableKt" managed-name="AndroidX.Tracing.EventMetadataCloseableKt, Xamarin.AndroidX.Tracing.Tracing.Android" managed-type-token-id="33554474" />
+    <entry java-name="androidx/tracing/Frame" managed-name="AndroidX.Tracing.Frame, Xamarin.AndroidX.Tracing.Tracing.Android" managed-type-token-id="33554476" />
+    <entry java-name="androidx/tracing/FrameKt" managed-name="AndroidX.Tracing.FrameKt, Xamarin.AndroidX.Tracing.Tracing.Android" managed-type-token-id="33554477" />
+    <entry java-name="androidx/tracing/Counter" managed-name="AndroidX.Tracing.ICounter, Xamarin.AndroidX.Tracing.Tracing.Android" skip-in-java-to-managed="True" managed-type-token-id="33554478" />
+    <entry java-name="androidx/tracing/Counter" managed-name="AndroidX.Tracing.ICounterInvoker, Xamarin.AndroidX.Tracing.Tracing.Android" managed-type-token-id="33554479" />
+    <entry java-name="androidx/tracing/DelicateTracingApi" managed-name="AndroidX.Tracing.IDelicateTracingApi, Xamarin.AndroidX.Tracing.Tracing.Android" skip-in-java-to-managed="True" managed-type-token-id="33554480" />
+    <entry java-name="androidx/tracing/DelicateTracingApi" managed-name="AndroidX.Tracing.IDelicateTracingApiInvoker, Xamarin.AndroidX.Tracing.Tracing.Android" managed-type-token-id="33554481" />
+    <entry java-name="androidx/tracing/ExperimentalContextPropagation" managed-name="AndroidX.Tracing.IExperimentalContextPropagation, Xamarin.AndroidX.Tracing.Tracing.Android" skip-in-java-to-managed="True" managed-type-token-id="33554482" />
+    <entry java-name="androidx/tracing/ExperimentalContextPropagation" managed-name="AndroidX.Tracing.IExperimentalContextPropagationInvoker, Xamarin.AndroidX.Tracing.Tracing.Android" managed-type-token-id="33554483" />
+    <entry java-name="androidx/tracing/PropagationToken" managed-name="AndroidX.Tracing.IPropagationToken, Xamarin.AndroidX.Tracing.Tracing.Android" skip-in-java-to-managed="True" managed-type-token-id="33554484" />
+    <entry java-name="androidx/tracing/PropagationToken" managed-name="AndroidX.Tracing.IPropagationTokenInvoker, Xamarin.AndroidX.Tracing.Tracing.Android" managed-type-token-id="33554485" />
+    <entry java-name="androidx/tracing/MetadataEntry" managed-name="AndroidX.Tracing.MetadataEntry, Xamarin.AndroidX.Tracing.Tracing.Android" managed-type-token-id="33554486" />
+    <entry java-name="androidx/tracing/MetadataEntryKt" managed-name="AndroidX.Tracing.MetadataEntryKt, Xamarin.AndroidX.Tracing.Tracing.Android" managed-type-token-id="33554487" />
+    <entry java-name="androidx/tracing/MetaTraceKt" managed-name="AndroidX.Tracing.MetaTraceKt, Xamarin.AndroidX.Tracing.Tracing.Android" managed-type-token-id="33554488" />
+    <entry java-name="androidx/tracing/PerfettoTracer" managed-name="AndroidX.Tracing.PerfettoTracer, Xamarin.AndroidX.Tracing.Tracing.Android" managed-type-token-id="33554489" />
+    <entry java-name="androidx/tracing/PerfettoTracer_androidKt" managed-name="AndroidX.Tracing.PerfettoTracer_androidKt, Xamarin.AndroidX.Tracing.Tracing.Android" managed-type-token-id="33554490" />
+    <entry java-name="androidx/tracing/PlatformThreadContextElement" managed-name="AndroidX.Tracing.PlatformThreadContextElement, Xamarin.AndroidX.Tracing.Tracing.Android" managed-type-token-id="33554491" />
+    <entry java-name="androidx/tracing/PlatformThreadContextElement" managed-name="AndroidX.Tracing.PlatformThreadContextElementInvoker, Xamarin.AndroidX.Tracing.Tracing.Android" managed-type-token-id="33554492" />
+    <entry java-name="androidx/tracing/Poolable" managed-name="AndroidX.Tracing.Poolable, Xamarin.AndroidX.Tracing.Tracing.Android" managed-type-token-id="33554493" />
+    <entry java-name="androidx/tracing/Poolable" managed-name="AndroidX.Tracing.PoolableInvoker, Xamarin.AndroidX.Tracing.Tracing.Android" managed-type-token-id="33554494" />
+    <entry java-name="androidx/tracing/PooledTracePacketArray" managed-name="AndroidX.Tracing.PooledTracePacketArray, Xamarin.AndroidX.Tracing.Tracing.Android" managed-type-token-id="33554495" />
+    <entry java-name="androidx/tracing/ProcessTrack" managed-name="AndroidX.Tracing.ProcessTrack, Xamarin.AndroidX.Tracing.Tracing.Android" managed-type-token-id="33554496" />
+    <entry java-name="androidx/tracing/ProcessTrackKt" managed-name="AndroidX.Tracing.ProcessTrackKt, Xamarin.AndroidX.Tracing.Tracing.Android" managed-type-token-id="33554497" />
+    <entry java-name="androidx/tracing/PropagationUnsupportedToken" managed-name="AndroidX.Tracing.PropagationUnsupportedToken, Xamarin.AndroidX.Tracing.Tracing.Android" managed-type-token-id="33554498" />
+    <entry java-name="androidx/tracing/ProtoPoolKt" managed-name="AndroidX.Tracing.ProtoPoolKt, Xamarin.AndroidX.Tracing.Tracing.Android" managed-type-token-id="33554499" />
+    <entry java-name="androidx/tracing/Queue" managed-name="AndroidX.Tracing.Queue, Xamarin.AndroidX.Tracing.Tracing.Android" managed-type-token-id="33554500" />
+    <entry java-name="androidx/tracing/QueueKt" managed-name="AndroidX.Tracing.QueueKt, Xamarin.AndroidX.Tracing.Tracing.Android" managed-type-token-id="33554501" />
+    <entry java-name="androidx/tracing/SliceTrack" managed-name="AndroidX.Tracing.SliceTrack, Xamarin.AndroidX.Tracing.Tracing.Android" managed-type-token-id="33554502" />
+    <entry java-name="androidx/tracing/SliceTrack" managed-name="AndroidX.Tracing.SliceTrackInvoker, Xamarin.AndroidX.Tracing.Tracing.Android" managed-type-token-id="33554503" />
+    <entry java-name="androidx/tracing/Synchronized_androidKt" managed-name="AndroidX.Tracing.Synchronized_androidKt, Xamarin.AndroidX.Tracing.Tracing.Android" managed-type-token-id="33554504" />
+    <entry java-name="androidx/tracing/Tasks_androidKt" managed-name="AndroidX.Tracing.Tasks_androidKt, Xamarin.AndroidX.Tracing.Tracing.Android" managed-type-token-id="33554505" />
+    <entry java-name="androidx/tracing/Threads_jvmAndAndroidKt" managed-name="AndroidX.Tracing.Threads_jvmAndAndroidKt, Xamarin.AndroidX.Tracing.Tracing.Android" managed-type-token-id="33554506" />
+    <entry java-name="androidx/tracing/ThreadTrack" managed-name="AndroidX.Tracing.ThreadTrack, Xamarin.AndroidX.Tracing.Tracing.Android" managed-type-token-id="33554507" />
+    <entry java-name="androidx/tracing/ThreadTrackKt" managed-name="AndroidX.Tracing.ThreadTrackKt, Xamarin.AndroidX.Tracing.Tracing.Android" managed-type-token-id="33554508" />
+    <entry java-name="androidx/tracing/Throwables" managed-name="AndroidX.Tracing.Throwables, Xamarin.AndroidX.Tracing.Tracing.Android" managed-type-token-id="33554509" />
+    <entry java-name="androidx/tracing/Trace" managed-name="AndroidX.Tracing.Trace, Xamarin.AndroidX.Tracing.Tracing.Android" managed-type-token-id="33554510" />
+    <entry java-name="androidx/tracing/TraceAttributes" managed-name="AndroidX.Tracing.TraceAttributes, Xamarin.AndroidX.Tracing.Tracing.Android" managed-type-token-id="33554511" />
+    <entry java-name="androidx/tracing/TraceAttributes" managed-name="AndroidX.Tracing.TraceAttributesInvoker, Xamarin.AndroidX.Tracing.Tracing.Android" managed-type-token-id="33554512" />
+    <entry java-name="androidx/tracing/TraceContext" managed-name="AndroidX.Tracing.TraceContext, Xamarin.AndroidX.Tracing.Tracing.Android" managed-type-token-id="33554513" />
+    <entry java-name="androidx/tracing/TraceEvent" managed-name="AndroidX.Tracing.TraceEvent, Xamarin.AndroidX.Tracing.Tracing.Android" managed-type-token-id="33554514" />
+    <entry java-name="androidx/tracing/TraceEventKt" managed-name="AndroidX.Tracing.TraceEventKt, Xamarin.AndroidX.Tracing.Tracing.Android" managed-type-token-id="33554515" />
+    <entry java-name="androidx/tracing/TraceKt" managed-name="AndroidX.Tracing.TraceKt, Xamarin.AndroidX.Tracing.Tracing.Android" managed-type-token-id="33554516" />
+    <entry java-name="androidx/tracing/Tracer" managed-name="AndroidX.Tracing.Tracer, Xamarin.AndroidX.Tracing.Tracing.Android" managed-type-token-id="33554517" />
+    <entry java-name="androidx/tracing/Tracer$Companion" managed-name="AndroidX.Tracing.Tracer+Companion, Xamarin.AndroidX.Tracing.Tracing.Android" managed-type-token-id="33554527" />
+    <entry java-name="androidx/tracing/Tracer" managed-name="AndroidX.Tracing.TracerInvoker, Xamarin.AndroidX.Tracing.Tracing.Android" managed-type-token-id="33554518" />
+    <entry java-name="androidx/tracing/TraceTokens" managed-name="AndroidX.Tracing.TraceTokens, Xamarin.AndroidX.Tracing.Tracing.Android" managed-type-token-id="33554519" />
+    <entry java-name="androidx/tracing/Track" managed-name="AndroidX.Tracing.Track, Xamarin.AndroidX.Tracing.Tracing.Android" managed-type-token-id="33554520" />
+    <entry java-name="androidx/tracing/Track" managed-name="AndroidX.Tracing.TrackInvoker, Xamarin.AndroidX.Tracing.Tracing.Android" managed-type-token-id="33554521" />
+    <entry java-name="androidx/tracing/TrackDescriptor" managed-name="AndroidX.Tracing.TrackDescriptor, Xamarin.AndroidX.Tracing.Tracing.Android" managed-type-token-id="33554522" />
+    <entry java-name="androidx/tracing/TrackDescriptorKt" managed-name="AndroidX.Tracing.TrackDescriptorKt, Xamarin.AndroidX.Tracing.Tracing.Android" managed-type-token-id="33554523" />
+  </managed-to-java>
+</api>

@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="Agrosens/Agrosens.csproj">
+    <Deploy />
+  </Project>
+</Solution>

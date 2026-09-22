@@ -1,0 +1,72 @@
+<api type="debug" assembly-name="Xamarin.AndroidX.Graphics.Shapes.Android" mvid="e30900ec32984e6fa1390729941c5adc">
+  <java-to-managed>
+    <entry java-name="androidx/graphics/shapes/CornerRounding" managed-name="AndroidX.Graphics.Shapes.CornerRounding, Xamarin.AndroidX.Graphics.Shapes.Android" managed-type-token-id="33554441" />
+    <entry java-name="androidx/graphics/shapes/CornerRounding$Companion" managed-name="AndroidX.Graphics.Shapes.CornerRounding+Companion, Xamarin.AndroidX.Graphics.Shapes.Android" managed-type-token-id="33554469" />
+    <entry java-name="androidx/graphics/shapes/Cubic" managed-name="AndroidX.Graphics.Shapes.Cubic, Xamarin.AndroidX.Graphics.Shapes.Android" managed-type-token-id="33554442" />
+    <entry java-name="androidx/graphics/shapes/Cubic$Companion" managed-name="AndroidX.Graphics.Shapes.Cubic+Companion, Xamarin.AndroidX.Graphics.Shapes.Android" managed-type-token-id="33554470" />
+    <entry java-name="androidx/graphics/shapes/CubicKt" managed-name="AndroidX.Graphics.Shapes.CubicKt, Xamarin.AndroidX.Graphics.Shapes.Android" managed-type-token-id="33554443" />
+    <entry java-name="androidx/graphics/shapes/Feature" managed-name="AndroidX.Graphics.Shapes.Feature, Xamarin.AndroidX.Graphics.Shapes.Android" managed-type-token-id="33554444" />
+    <entry java-name="androidx/graphics/shapes/Feature$Factory" managed-name="AndroidX.Graphics.Shapes.Feature+Factory, Xamarin.AndroidX.Graphics.Shapes.Android" managed-type-token-id="33554471" />
+    <entry java-name="androidx/graphics/shapes/Feature" managed-name="AndroidX.Graphics.Shapes.FeatureInvoker, Xamarin.AndroidX.Graphics.Shapes.Android" managed-type-token-id="33554445" />
+    <entry java-name="androidx/graphics/shapes/FeatureDetectorKt" managed-name="AndroidX.Graphics.Shapes.FeatureDetectorKt, Xamarin.AndroidX.Graphics.Shapes.Android" managed-type-token-id="33554446" />
+    <entry java-name="androidx/graphics/shapes/FeatureMappingKt" managed-name="AndroidX.Graphics.Shapes.FeatureMappingKt, Xamarin.AndroidX.Graphics.Shapes.Android" managed-type-token-id="33554447" />
+    <entry java-name="androidx/graphics/shapes/FeatureSerializer" managed-name="AndroidX.Graphics.Shapes.FeatureSerializer, Xamarin.AndroidX.Graphics.Shapes.Android" managed-type-token-id="33554448" />
+    <entry java-name="androidx/graphics/shapes/FeatureSerializer$Companion" managed-name="AndroidX.Graphics.Shapes.FeatureSerializer+Companion, Xamarin.AndroidX.Graphics.Shapes.Android" managed-type-token-id="33554472" />
+    <entry java-name="androidx/graphics/shapes/FloatMappingKt" managed-name="AndroidX.Graphics.Shapes.FloatMappingKt, Xamarin.AndroidX.Graphics.Shapes.Android" managed-type-token-id="33554449" />
+    <entry java-name="androidx/graphics/shapes/Format_jvmKt" managed-name="AndroidX.Graphics.Shapes.Format_jvmKt, Xamarin.AndroidX.Graphics.Shapes.Android" managed-type-token-id="33554450" />
+    <entry java-name="androidx/graphics/shapes/MutablePoint" managed-name="AndroidX.Graphics.Shapes.IMutablePoint, Xamarin.AndroidX.Graphics.Shapes.Android" skip-in-java-to-managed="True" managed-type-token-id="33554451" />
+    <entry java-name="androidx/graphics/shapes/MutablePoint" managed-name="AndroidX.Graphics.Shapes.IMutablePointInvoker, Xamarin.AndroidX.Graphics.Shapes.Android" managed-type-token-id="33554452" />
+    <entry java-name="androidx/graphics/shapes/PointTransformer" managed-name="AndroidX.Graphics.Shapes.IPointTransformer, Xamarin.AndroidX.Graphics.Shapes.Android" skip-in-java-to-managed="True" managed-type-token-id="33554453" />
+    <entry java-name="androidx/graphics/shapes/PointTransformer" managed-name="AndroidX.Graphics.Shapes.IPointTransformerInvoker, Xamarin.AndroidX.Graphics.Shapes.Android" managed-type-token-id="33554454" />
+    <entry java-name="androidx/graphics/shapes/Morph" managed-name="AndroidX.Graphics.Shapes.Morph, Xamarin.AndroidX.Graphics.Shapes.Android" managed-type-token-id="33554455" />
+    <entry java-name="androidx/graphics/shapes/MorphKt" managed-name="AndroidX.Graphics.Shapes.MorphKt, Xamarin.AndroidX.Graphics.Shapes.Android" managed-type-token-id="33554456" />
+    <entry java-name="androidx/graphics/shapes/MutableCubic" managed-name="AndroidX.Graphics.Shapes.MutableCubic, Xamarin.AndroidX.Graphics.Shapes.Android" managed-type-token-id="33554457" />
+    <entry java-name="androidx/graphics/shapes/PointKt" managed-name="AndroidX.Graphics.Shapes.PointKt, Xamarin.AndroidX.Graphics.Shapes.Android" managed-type-token-id="33554458" />
+    <entry java-name="androidx/graphics/shapes/PolygonMeasureKt" managed-name="AndroidX.Graphics.Shapes.PolygonMeasureKt, Xamarin.AndroidX.Graphics.Shapes.Android" managed-type-token-id="33554459" />
+    <entry java-name="androidx/graphics/shapes/PolygonValidationKt" managed-name="AndroidX.Graphics.Shapes.PolygonValidationKt, Xamarin.AndroidX.Graphics.Shapes.Android" managed-type-token-id="33554460" />
+    <entry java-name="androidx/graphics/shapes/RoundedPolygon" managed-name="AndroidX.Graphics.Shapes.RoundedPolygon, Xamarin.AndroidX.Graphics.Shapes.Android" managed-type-token-id="33554461" />
+    <entry java-name="androidx/graphics/shapes/RoundedPolygon$Companion" managed-name="AndroidX.Graphics.Shapes.RoundedPolygon+Companion, Xamarin.AndroidX.Graphics.Shapes.Android" managed-type-token-id="33554473" />
+    <entry java-name="androidx/graphics/shapes/RoundedPolygonKt" managed-name="AndroidX.Graphics.Shapes.RoundedPolygonKt, Xamarin.AndroidX.Graphics.Shapes.Android" managed-type-token-id="33554462" />
+    <entry java-name="androidx/graphics/shapes/ShapesKt" managed-name="AndroidX.Graphics.Shapes.ShapesKt, Xamarin.AndroidX.Graphics.Shapes.Android" managed-type-token-id="33554463" />
+    <entry java-name="androidx/graphics/shapes/Shapes_androidKt" managed-name="AndroidX.Graphics.Shapes.Shapes_androidKt, Xamarin.AndroidX.Graphics.Shapes.Android" managed-type-token-id="33554464" />
+    <entry java-name="androidx/graphics/shapes/SvgPathParser" managed-name="AndroidX.Graphics.Shapes.SvgPathParser, Xamarin.AndroidX.Graphics.Shapes.Android" managed-type-token-id="33554465" />
+    <entry java-name="androidx/graphics/shapes/SvgPathParser$Companion" managed-name="AndroidX.Graphics.Shapes.SvgPathParser+Companion, Xamarin.AndroidX.Graphics.Shapes.Android" managed-type-token-id="33554474" />
+    <entry java-name="androidx/graphics/shapes/SvgPathParserKt" managed-name="AndroidX.Graphics.Shapes.SvgPathParserKt, Xamarin.AndroidX.Graphics.Shapes.Android" managed-type-token-id="33554466" />
+    <entry java-name="androidx/graphics/shapes/Utils" managed-name="AndroidX.Graphics.Shapes.Utils, Xamarin.AndroidX.Graphics.Shapes.Android" managed-type-token-id="33554467" />
+  </java-to-managed>
+  <managed-to-java>
+    <entry java-name="androidx/graphics/shapes/CornerRounding" managed-name="AndroidX.Graphics.Shapes.CornerRounding, Xamarin.AndroidX.Graphics.Shapes.Android" managed-type-token-id="33554441" />
+    <entry java-name="androidx/graphics/shapes/CornerRounding$Companion" managed-name="AndroidX.Graphics.Shapes.CornerRounding+Companion, Xamarin.AndroidX.Graphics.Shapes.Android" managed-type-token-id="33554469" />
+    <entry java-name="androidx/graphics/shapes/Cubic" managed-name="AndroidX.Graphics.Shapes.Cubic, Xamarin.AndroidX.Graphics.Shapes.Android" managed-type-token-id="33554442" />
+    <entry java-name="androidx/graphics/shapes/Cubic$Companion" managed-name="AndroidX.Graphics.Shapes.Cubic+Companion, Xamarin.AndroidX.Graphics.Shapes.Android" managed-type-token-id="33554470" />
+    <entry java-name="androidx/graphics/shapes/CubicKt" managed-name="AndroidX.Graphics.Shapes.CubicKt, Xamarin.AndroidX.Graphics.Shapes.Android" managed-type-token-id="33554443" />
+    <entry java-name="androidx/graphics/shapes/Feature" managed-name="AndroidX.Graphics.Shapes.Feature, Xamarin.AndroidX.Graphics.Shapes.Android" managed-type-token-id="33554444" />
+    <entry java-name="androidx/graphics/shapes/Feature$Factory" managed-name="AndroidX.Graphics.Shapes.Feature+Factory, Xamarin.AndroidX.Graphics.Shapes.Android" managed-type-token-id="33554471" />
+    <entry java-name="androidx/graphics/shapes/Feature" managed-name="AndroidX.Graphics.Shapes.FeatureInvoker, Xamarin.AndroidX.Graphics.Shapes.Android" managed-type-token-id="33554445" />
+    <entry java-name="androidx/graphics/shapes/FeatureDetectorKt" managed-name="AndroidX.Graphics.Shapes.FeatureDetectorKt, Xamarin.AndroidX.Graphics.Shapes.Android" managed-type-token-id="33554446" />
+    <entry java-name="androidx/graphics/shapes/FeatureMappingKt" managed-name="AndroidX.Graphics.Shapes.FeatureMappingKt, Xamarin.AndroidX.Graphics.Shapes.Android" managed-type-token-id="33554447" />
+    <entry java-name="androidx/graphics/shapes/FeatureSerializer" managed-name="AndroidX.Graphics.Shapes.FeatureSerializer, Xamarin.AndroidX.Graphics.Shapes.Android" managed-type-token-id="33554448" />
+    <entry java-name="androidx/graphics/shapes/FeatureSerializer$Companion" managed-name="AndroidX.Graphics.Shapes.FeatureSerializer+Companion, Xamarin.AndroidX.Graphics.Shapes.Android" managed-type-token-id="33554472" />
+    <entry java-name="androidx/graphics/shapes/FloatMappingKt" managed-name="AndroidX.Graphics.Shapes.FloatMappingKt, Xamarin.AndroidX.Graphics.Shapes.Android" managed-type-token-id="33554449" />
+    <entry java-name="androidx/graphics/shapes/Format_jvmKt" managed-name="AndroidX.Graphics.Shapes.Format_jvmKt, Xamarin.AndroidX.Graphics.Shapes.Android" managed-type-token-id="33554450" />
+    <entry java-name="androidx/graphics/shapes/MutablePoint" managed-name="AndroidX.Graphics.Shapes.IMutablePoint, Xamarin.AndroidX.Graphics.Shapes.Android" skip-in-java-to-managed="True" managed-type-token-id="33554451" />
+    <entry java-name="androidx/graphics/shapes/MutablePoint" managed-name="AndroidX.Graphics.Shapes.IMutablePointInvoker, Xamarin.AndroidX.Graphics.Shapes.Android" managed-type-token-id="33554452" />
+    <entry java-name="androidx/graphics/shapes/PointTransformer" managed-name="AndroidX.Graphics.Shapes.IPointTransformer, Xamarin.AndroidX.Graphics.Shapes.Android" skip-in-java-to-managed="True" managed-type-token-id="33554453" />
+    <entry java-name="androidx/graphics/shapes/PointTransformer" managed-name="AndroidX.Graphics.Shapes.IPointTransformerInvoker, Xamarin.AndroidX.Graphics.Shapes.Android" managed-type-token-id="33554454" />
+    <entry java-name="androidx/graphics/shapes/Morph" managed-name="AndroidX.Graphics.Shapes.Morph, Xamarin.AndroidX.Graphics.Shapes.Android" managed-type-token-id="33554455" />
+    <entry java-name="androidx/graphics/shapes/MorphKt" managed-name="AndroidX.Graphics.Shapes.MorphKt, Xamarin.AndroidX.Graphics.Shapes.Android" managed-type-token-id="33554456" />
+    <entry java-name="androidx/graphics/shapes/MutableCubic" managed-name="AndroidX.Graphics.Shapes.MutableCubic, Xamarin.AndroidX.Graphics.Shapes.Android" managed-type-token-id="33554457" />
+    <entry java-name="androidx/graphics/shapes/PointKt" managed-name="AndroidX.Graphics.Shapes.PointKt, Xamarin.AndroidX.Graphics.Shapes.Android" managed-type-token-id="33554458" />
+    <entry java-name="androidx/graphics/shapes/PolygonMeasureKt" managed-name="AndroidX.Graphics.Shapes.PolygonMeasureKt, Xamarin.AndroidX.Graphics.Shapes.Android" managed-type-token-id="33554459" />
+    <entry java-name="androidx/graphics/shapes/PolygonValidationKt" managed-name="AndroidX.Graphics.Shapes.PolygonValidationKt, Xamarin.AndroidX.Graphics.Shapes.Android" managed-type-token-id="33554460" />
+    <entry java-name="androidx/graphics/shapes/RoundedPolygon" managed-name="AndroidX.Graphics.Shapes.RoundedPolygon, Xamarin.AndroidX.Graphics.Shapes.Android" managed-type-token-id="33554461" />
+    <entry java-name="androidx/graphics/shapes/RoundedPolygon$Companion" managed-name="AndroidX.Graphics.Shapes.RoundedPolygon+Companion, Xamarin.AndroidX.Graphics.Shapes.Android" managed-type-token-id="33554473" />
+    <entry java-name="androidx/graphics/shapes/RoundedPolygonKt" managed-name="AndroidX.Graphics.Shapes.RoundedPolygonKt, Xamarin.AndroidX.Graphics.Shapes.Android" managed-type-token-id="33554462" />
+    <entry java-name="androidx/graphics/shapes/ShapesKt" managed-name="AndroidX.Graphics.Shapes.ShapesKt, Xamarin.AndroidX.Graphics.Shapes.Android" managed-type-token-id="33554463" />
+    <entry java-name="androidx/graphics/shapes/Shapes_androidKt" managed-name="AndroidX.Graphics.Shapes.Shapes_androidKt, Xamarin.AndroidX.Graphics.Shapes.Android" managed-type-token-id="33554464" />
+    <entry java-name="androidx/graphics/shapes/SvgPathParser" managed-name="AndroidX.Graphics.Shapes.SvgPathParser, Xamarin.AndroidX.Graphics.Shapes.Android" managed-type-token-id="33554465" />
+    <entry java-name="androidx/graphics/shapes/SvgPathParser$Companion" managed-name="AndroidX.Graphics.Shapes.SvgPathParser+Companion, Xamarin.AndroidX.Graphics.Shapes.Android" managed-type-token-id="33554474" />
+    <entry java-name="androidx/graphics/shapes/SvgPathParserKt" managed-name="AndroidX.Graphics.Shapes.SvgPathParserKt, Xamarin.AndroidX.Graphics.Shapes.Android" managed-type-token-id="33554466" />
+    <entry java-name="androidx/graphics/shapes/Utils" managed-name="AndroidX.Graphics.Shapes.Utils, Xamarin.AndroidX.Graphics.Shapes.Android" managed-type-token-id="33554467" />
+  </managed-to-java>
+</api>
