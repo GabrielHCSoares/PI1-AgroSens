@@ -105,8 +105,10 @@
                     android:textColor="#FFFFFF"
                     android:gravity="center"/>
 				<TextView
+                    android:id="@+id/txtCounterGalpao"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
                     android:text="2/4"
                     android:textSize="12sp"
                     android:textStyle="bold"
@@ -167,6 +169,7 @@
                         android:layout_gravity="center"
                         android:background="@drawable/bg_circle_white_solid">
 						<TextView
+                            android:id="@+id/txtCounterAgua"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
@@ -178,11 +181,13 @@
 				</FrameLayout>
 
 				<TextView
+                    android:id="@+id/txtCounterGalpao"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="4dp"
-                    android:text="Água"
-                    android:textSize="10sp"
+                    android:text="2/4"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
                     android:textColor="#FFFFFF"
                     android:gravity="center"/>
 			</LinearLayout>
@@ -240,6 +245,7 @@
                         android:layout_gravity="center"
                         android:background="@drawable/bg_circle_white_solid">
 						<TextView
+                            android:id="@+id/txtCounterSilagem"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
@@ -346,6 +352,7 @@
                 android:layout_marginRight="18dp"/>
 
 			<TextView
+                android:id="@+id/txtCounterPorteiras"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"

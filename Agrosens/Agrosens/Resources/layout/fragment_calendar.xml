@@ -300,65 +300,15 @@
                 android:layout_marginTop="14dp"
                 android:background="#E0E0E0"/>
 
-            <!-- ============ EVENTO DO DIA SELECIONADO ============ -->
+            <!-- ============ EVENTOS DO DIA SELECIONADO (preenchidos por código) ============ -->
             <LinearLayout
+                android:id="@+id/calendarDayEventsContainer"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
                 android:paddingLeft="20dp"
                 android:paddingRight="20dp"
                 android:orientation="vertical">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:gravity="center_vertical">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="●"
-                        android:textSize="10sp"
-                        android:textColor="#8E64C7"
-                        android:layout_marginRight="6dp"/>
-
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="10:00 - 11:00"
-                        android:textSize="13sp"
-                        android:textColor="#8A968D"/>
-
-                    <TextView
-                        android:id="@+id/btnEventoMenu"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="⋯"
-                        android:textSize="18sp"
-                        android:textColor="#8A968D"
-                        android:padding="6dp"
-                        android:clickable="true"
-                        android:focusable="true"/>
-                </LinearLayout>
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="4dp"
-                    android:text="Reunião com Sr. Gabriel"
-                    android:textSize="16sp"
-                    android:textStyle="bold"
-                    android:textColor="#1B3A24"/>
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="2dp"
-                    android:text="Reunião sobre a compra do gado"
-                    android:textSize="13sp"
-                    android:textColor="#8A968D"/>
             </LinearLayout>
 
         </LinearLayout>

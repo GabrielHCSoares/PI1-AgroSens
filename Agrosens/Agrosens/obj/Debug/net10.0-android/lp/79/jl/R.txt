@@ -1,1 +1,1 @@
-int id view_tree_disjoint_parent 0x0
+int string androidx_startup 0x0

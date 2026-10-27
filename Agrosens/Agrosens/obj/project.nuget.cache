@@ -1,10 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "+WnQCyWY02w=",
+  "dgSpecHash": "DhKIEz5wPek=",
   "success": true,
-  "projectFilePath": "C:\\Users\\evald\\Desktop\\Agro\\Agrosens\\Agrosens\\Agrosens.csproj",
+  "projectFilePath": "C:\\Users\\evald\\Desktop\\Faculdade\\PI1-AgroSens\\Agrosens\\Agrosens\\Agrosens.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\evald\\.nuget\\packages\\microsoft.net.illink.tasks\\10.0.12\\microsoft.net.illink.tasks.10.0.12.nupkg.sha512",
+    "C:\\Users\\evald\\.nuget\\packages\\sqlite-net-pcl\\1.9.172\\sqlite-net-pcl.1.9.172.nupkg.sha512",
+    "C:\\Users\\evald\\.nuget\\packages\\sqlitepclraw.bundle_green\\2.1.10\\sqlitepclraw.bundle_green.2.1.10.nupkg.sha512",
+    "C:\\Users\\evald\\.nuget\\packages\\sqlitepclraw.core\\2.1.10\\sqlitepclraw.core.2.1.10.nupkg.sha512",
+    "C:\\Users\\evald\\.nuget\\packages\\sqlitepclraw.lib.e_sqlite3.android\\2.1.10\\sqlitepclraw.lib.e_sqlite3.android.2.1.10.nupkg.sha512",
+    "C:\\Users\\evald\\.nuget\\packages\\sqlitepclraw.provider.e_sqlite3\\2.1.10\\sqlitepclraw.provider.e_sqlite3.2.1.10.nupkg.sha512",
     "C:\\Users\\evald\\.nuget\\packages\\xamarin.androidx.activity\\1.13.0.1\\xamarin.androidx.activity.1.13.0.1.nupkg.sha512",
     "C:\\Users\\evald\\.nuget\\packages\\xamarin.androidx.activity.ktx\\1.13.0.1\\xamarin.androidx.activity.ktx.1.13.0.1.nupkg.sha512",
     "C:\\Users\\evald\\.nuget\\packages\\xamarin.androidx.annotation\\1.10.0.1\\xamarin.androidx.annotation.1.10.0.1.nupkg.sha512",
@@ -82,5 +87,20 @@
     "C:\\Users\\evald\\.nuget\\packages\\xamarin.kotlinx.serialization.core\\1.11.0.1\\xamarin.kotlinx.serialization.core.1.11.0.1.nupkg.sha512",
     "C:\\Users\\evald\\.nuget\\packages\\xamarin.kotlinx.serialization.core.jvm\\1.11.0.1\\xamarin.kotlinx.serialization.core.jvm.1.11.0.1.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1903",
+      "level": "Warning",
+      "message": "O pacote 'SQLitePCLRaw.lib.e_sqlite3.android' 2.1.10 tem uma alta vulnerabilidade de gravidade conhecida, https://github.com/advisories/GHSA-2m69-gcr7-jv3q",
+      "projectPath": "C:\\Users\\evald\\Desktop\\Faculdade\\PI1-AgroSens\\Agrosens\\Agrosens\\Agrosens.csproj",
+      "warningLevel": 1,
+      "filePath": "C:\\Users\\evald\\Desktop\\Faculdade\\PI1-AgroSens\\Agrosens\\Agrosens\\Agrosens.csproj",
+      "libraryId": "SQLitePCLRaw.lib.e_sqlite3.android",
+      "targetGraphs": [
+        "net10.0-android",
+        "net10.0-android/android-arm64",
+        "net10.0-android/android-x64"
+      ]
+    }
+  ]
 }

@@ -19,6 +19,7 @@ drawable\bg_circle_white;drawable\bg_circle_white
 drawable\bg_circle_white_solid;drawable\bg_circle_white_solid
 drawable\bg_circular_progress_white;drawable\bg_circular_progress_white
 drawable\bg_day_selected_circle;drawable\bg_day_selected_circle
+drawable\bg_dot_event;drawable\bg_dot_event
 drawable\bg_drag_handle;drawable\bg_drag_handle
 drawable\bg_event_green;drawable\bg_event_green
 drawable\bg_input_field;drawable\bg_input_field
@@ -29,8 +30,10 @@ drawable\calendario;drawable\calendario
 drawable\geral;drawable\geral
 drawable\ic_calendar_green;drawable\ic_calendar_green
 drawable\ic_car_green;drawable\ic_car_green
+drawable\ic_check;drawable\ic_check
 drawable\ic_chevron_right_green;drawable\ic_chevron_right_green
 drawable\ic_clock_green;drawable\ic_clock_green
+drawable\ic_close;drawable\ic_close
 drawable\ic_gate_green;drawable\ic_gate_green
 drawable\ic_leaf_white;drawable\ic_leaf_white
 drawable\ic_logo_leaf;drawable\ic_logo_leaf

@@ -1,3 +1,5 @@
+SQLitePCLRaw.batteries_v2.dll
+SQLitePCLRaw.lib.e_sqlite3.android.dll
 Xamarin.AndroidX.Activity.dll
 Xamarin.AndroidX.Activity.Ktx.dll
 Xamarin.AndroidX.Annotation.dll
@@ -124,6 +126,7 @@ androidx.appcompat.appcompat.aar
 androidx.constraintlayout.constraintlayout.aar
 androidx.cardview.cardview.aar
 com.google.android.material.material.aar
+SQLitePCLRaw.lib.e_sqlite3.android.aar
 Xamarin.Google.ErrorProne.Annotations.aar
 Xamarin.Google.Guava.ListenableFuture.aar
 Xamarin.Jetbrains.Annotations.aar

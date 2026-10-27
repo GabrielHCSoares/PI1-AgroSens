@@ -7,6 +7,7 @@
       </constructors>
       <methods>
         <method name="onCreate" method="n_onCreate:(Landroid/os/Bundle;)V:GetOnCreate_Landroid_os_Bundle_Handler" jni_signature="(Landroid/os/Bundle;)V" params="android.os.Bundle p0" retval="void" is_dynamically_registered="True" super_call="p0" activate_call="p0" />
+        <method name="onResume" method="n_onResume:()V:GetOnResumeHandler" jni_signature="()V" retval="void" is_dynamically_registered="True" />
       </methods>
     </type>
     <type name="AddEventBottomSheet" package="crc648cf713a3b609d12a" application_java_class="android.app.Application" mono_runtime_initialization="mono.MonoPackageManager.LoadApplication (context);" extends_type="com.google.android.material.bottomsheet.BottomSheetDialogFragment" partial_assembly_qualified_name="Agrosens.Views.AddEventBottomSheet, Agrosens">

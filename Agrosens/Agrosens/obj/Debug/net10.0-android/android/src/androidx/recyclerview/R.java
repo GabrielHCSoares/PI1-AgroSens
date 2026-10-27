@@ -28,7 +28,7 @@ public final class R {
 		public static final int item_touch_helper_swipe_escape_velocity = 0x7f06009e;
 	}
 	public static final class id {
-		public static final int item_touch_helper_previous_elevation = 0x7f080136;
+		public static final int item_touch_helper_previous_elevation = 0x7f08013a;
 	}
 	public static final class styleable {
 		public static final int[] RecyclerView = new int[] { 0x010100c4, 0x010100eb, 0x010100f1, 0x7f03020b, 0x7f03020c, 0x7f03020d, 0x7f03020e, 0x7f03020f, 0x7f0302cd, 0x7f030429, 0x7f030473, 0x7f03047e };

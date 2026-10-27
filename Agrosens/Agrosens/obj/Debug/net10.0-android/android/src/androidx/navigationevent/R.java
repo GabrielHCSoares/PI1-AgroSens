@@ -8,6 +8,6 @@ package androidx.navigationevent;
 
 public final class R {
 	public static final class id {
-		public static final int view_tree_navigation_event_dispatcher_owner = 0x7f080268;
+		public static final int view_tree_navigation_event_dispatcher_owner = 0x7f080274;
 	}
 }

@@ -116,6 +116,17 @@
                 android:textSize="13sp"
                 android:textColor="#B0BDB4"/>
 
+			<TextView
+                android:id="@+id/txtStartTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/btnStartTime"
+                android:layout_marginRight="8dp"
+                android:text="--:--"
+                android:textSize="14sp"
+                android:textColor="#1B3A24"/>
+
 			<ImageView
                 android:id="@+id/btnStartTime"
                 android:layout_width="24dp"
@@ -145,6 +156,17 @@
                 android:text="Hora de termino"
                 android:textSize="13sp"
                 android:textColor="#B0BDB4"/>
+
+			<TextView
+                android:id="@+id/txtEndTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/btnEndTime"
+                android:layout_marginRight="8dp"
+                android:text="--:--"
+                android:textSize="14sp"
+                android:textColor="#1B3A24"/>
 
 			<ImageView
                 android:id="@+id/btnEndTime"

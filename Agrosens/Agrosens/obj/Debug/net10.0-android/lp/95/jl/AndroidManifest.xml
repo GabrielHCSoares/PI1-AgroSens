@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="androidx.navigationevent.navigationevent.anchor">
-    <uses-sdk android:minSdkVersion="23"/>
+    package="androidx.recyclerview" >
+
+    <uses-sdk android:minSdkVersion="21" />
+
 </manifest>
