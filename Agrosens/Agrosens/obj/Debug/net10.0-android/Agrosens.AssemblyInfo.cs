@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Agrosens")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+ee0fbf055edeb3824807ed8a43bc7ead4591139f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+45b1c7bddd7504eb3b645e8e23be2691d6206f6d")]
 [assembly: System.Reflection.AssemblyProductAttribute("Agrosens")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Agrosens")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -26,6 +26,9 @@ namespace Agrosens
         LoginForm,
         SignUpForm,
         AboutUs,
+        PrivacyPolicy,
+        Settings,
+        ChangePassword,
         EditProfile
     }
 
@@ -235,6 +238,30 @@ namespace Agrosens
                     View aboutUsView = LayoutInflater.Inflate(Resource.Layout.fragment_about_us, _contentContainer, false)!;
                     _contentContainer.AddView(aboutUsView);
                     SetupAboutUsEvents(aboutUsView);
+                    break;
+
+                case AppTab.PrivacyPolicy:
+                    _navPerfil?.SetBackgroundResource(Resource.Drawable.bg_tab_active_pill);
+                    _centralCircleBg?.SetBackgroundResource(Resource.Drawable.bg_circle_black);
+                    View privacyView = LayoutInflater.Inflate(Resource.Layout.fragment_privacy, _contentContainer, false)!;
+                    _contentContainer.AddView(privacyView);
+                    SetupPrivacyEvents(privacyView);
+                    break;
+
+                case AppTab.Settings:
+                    _navPerfil?.SetBackgroundResource(Resource.Drawable.bg_tab_active_pill);
+                    _centralCircleBg?.SetBackgroundResource(Resource.Drawable.bg_circle_black);
+                    View settingsView = LayoutInflater.Inflate(Resource.Layout.fragment_settings, _contentContainer, false)!;
+                    _contentContainer.AddView(settingsView);
+                    SetupSettingsEvents(settingsView);
+                    break;
+
+                case AppTab.ChangePassword:
+                    _navPerfil?.SetBackgroundResource(Resource.Drawable.bg_tab_active_pill);
+                    _centralCircleBg?.SetBackgroundResource(Resource.Drawable.bg_circle_black);
+                    View changePasswordView = LayoutInflater.Inflate(Resource.Layout.fragment_change_password, _contentContainer, false)!;
+                    _contentContainer.AddView(changePasswordView);
+                    SetupChangePasswordEvents(changePasswordView);
                     break;
 
                 case AppTab.EditProfile:
@@ -474,8 +501,16 @@ namespace Agrosens
                 menuProfile.Click += (s, e) => SwitchTab(AppTab.EditProfile);
             }
 
-            BindClick(view, Resource.Id.menuPrivacy, "Política de privacidade");
-            BindClick(view, Resource.Id.menuSettings, "Configuração");
+            var menuPrivacy = view.FindViewById(Resource.Id.menuPrivacy);
+            if (menuPrivacy != null)
+            {
+                menuPrivacy.Click += (s, e) => SwitchTab(AppTab.PrivacyPolicy);
+            }
+            var menuSettings = view.FindViewById(Resource.Id.menuSettings);
+            if (menuSettings != null)
+            {
+                menuSettings.Click += (s, e) => SwitchTab(AppTab.Settings);
+            }
 
             var menuHelp = view.FindViewById(Resource.Id.menuHelp);
             if (menuHelp != null)
@@ -501,6 +536,61 @@ namespace Agrosens
             if (btnBackAbout != null)
             {
                 btnBackAbout.Click += (s, e) => SwitchTab(AppTab.Perfil);
+            }
+        }
+
+        private void SetupPrivacyEvents(View view)
+        {
+            var btnBackPrivacy = view.FindViewById(Resource.Id.btnBackPrivacy);
+            if (btnBackPrivacy != null)
+            {
+                btnBackPrivacy.Click += (s, e) => SwitchTab(AppTab.Perfil);
+            }
+        }
+
+        private void SetupSettingsEvents(View view)
+        {
+            var btnBackSettings = view.FindViewById(Resource.Id.btnBackSettings);
+            if (btnBackSettings != null)
+            {
+                btnBackSettings.Click += (s, e) => SwitchTab(AppTab.Perfil);
+            }
+
+            var menuNotifications = view.FindViewById(Resource.Id.menuNotifications);
+            if (menuNotifications != null)
+            {
+                menuNotifications.Click += (s, e) => { };
+            }
+
+            var btnChangePassword = view.FindViewById(Resource.Id.btnChangePassword);
+            if (btnChangePassword != null)
+            {
+                btnChangePassword.Click += (s, e) => SwitchTab(AppTab.ChangePassword);
+            }
+
+            var btnClearData = view.FindViewById(Resource.Id.btnClearData);
+            if (btnClearData != null)
+            {
+                btnClearData.Click += (s, e) => { };
+            }
+        }
+
+        private void SetupChangePasswordEvents(View view)
+        {
+            var btnBackChangePassword = view.FindViewById(Resource.Id.btnBackChangePassword);
+            if (btnBackChangePassword != null)
+            {
+                btnBackChangePassword.Click += (s, e) => SwitchTab(AppTab.Settings);
+            }
+
+            var btnSavePassword = view.FindViewById(Resource.Id.btnSavePassword);
+            if (btnSavePassword != null)
+            {
+                btnSavePassword.Click += (s, e) =>
+                {
+                    Toast.MakeText(this, "Senha alterada com sucesso!", ToastLength.Short)?.Show();
+                    SwitchTab(AppTab.Settings);
+                };
             }
         }
 

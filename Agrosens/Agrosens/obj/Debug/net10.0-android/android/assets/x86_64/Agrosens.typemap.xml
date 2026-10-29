@@ -1,18 +1,18 @@
-<api type="debug" assembly-name="Agrosens" mvid="f0453e2821ec46e9a314c3fb2fec65b8">
+<api type="debug" assembly-name="Agrosens" mvid="ac18d282f602476b905433256dcfcc03">
   <java-to-managed>
-    <entry java-name="com/companyname/agrosens/MainActivity" managed-name="Agrosens.MainActivity, Agrosens" managed-type-token-id="33554435" />
-    <entry java-name="crc648cf713a3b609d12a/AddEventBottomSheet" managed-name="Agrosens.Views.AddEventBottomSheet, Agrosens" managed-type-token-id="33554437" />
-    <entry java-name="crc648cf713a3b609d12a/CalendarFragment" managed-name="Agrosens.Views.CalendarFragment, Agrosens" managed-type-token-id="33554438" />
-    <entry java-name="crc648cf713a3b609d12a/GeralFragment" managed-name="Agrosens.Views.GeralFragment, Agrosens" managed-type-token-id="33554439" />
-    <entry java-name="crc648cf713a3b609d12a/HomeFragment" managed-name="Agrosens.Views.HomeFragment, Agrosens" managed-type-token-id="33554440" />
-    <entry java-name="crc648cf713a3b609d12a/PerfilFragment" managed-name="Agrosens.Views.PerfilFragment, Agrosens" managed-type-token-id="33554441" />
+    <entry java-name="com/companyname/agrosens/MainActivity" managed-name="Agrosens.MainActivity, Agrosens" managed-type-token-id="33554436" />
+    <entry java-name="crc648cf713a3b609d12a/AddEventBottomSheet" managed-name="Agrosens.Views.AddEventBottomSheet, Agrosens" managed-type-token-id="33554438" />
+    <entry java-name="crc648cf713a3b609d12a/CalendarFragment" managed-name="Agrosens.Views.CalendarFragment, Agrosens" managed-type-token-id="33554439" />
+    <entry java-name="crc648cf713a3b609d12a/GeralFragment" managed-name="Agrosens.Views.GeralFragment, Agrosens" managed-type-token-id="33554440" />
+    <entry java-name="crc648cf713a3b609d12a/HomeFragment" managed-name="Agrosens.Views.HomeFragment, Agrosens" managed-type-token-id="33554441" />
+    <entry java-name="crc648cf713a3b609d12a/PerfilFragment" managed-name="Agrosens.Views.PerfilFragment, Agrosens" managed-type-token-id="33554442" />
   </java-to-managed>
   <managed-to-java>
-    <entry java-name="com/companyname/agrosens/MainActivity" managed-name="Agrosens.MainActivity, Agrosens" managed-type-token-id="33554435" />
-    <entry java-name="crc648cf713a3b609d12a/AddEventBottomSheet" managed-name="Agrosens.Views.AddEventBottomSheet, Agrosens" managed-type-token-id="33554437" />
-    <entry java-name="crc648cf713a3b609d12a/CalendarFragment" managed-name="Agrosens.Views.CalendarFragment, Agrosens" managed-type-token-id="33554438" />
-    <entry java-name="crc648cf713a3b609d12a/GeralFragment" managed-name="Agrosens.Views.GeralFragment, Agrosens" managed-type-token-id="33554439" />
-    <entry java-name="crc648cf713a3b609d12a/HomeFragment" managed-name="Agrosens.Views.HomeFragment, Agrosens" managed-type-token-id="33554440" />
-    <entry java-name="crc648cf713a3b609d12a/PerfilFragment" managed-name="Agrosens.Views.PerfilFragment, Agrosens" managed-type-token-id="33554441" />
+    <entry java-name="com/companyname/agrosens/MainActivity" managed-name="Agrosens.MainActivity, Agrosens" managed-type-token-id="33554436" />
+    <entry java-name="crc648cf713a3b609d12a/AddEventBottomSheet" managed-name="Agrosens.Views.AddEventBottomSheet, Agrosens" managed-type-token-id="33554438" />
+    <entry java-name="crc648cf713a3b609d12a/CalendarFragment" managed-name="Agrosens.Views.CalendarFragment, Agrosens" managed-type-token-id="33554439" />
+    <entry java-name="crc648cf713a3b609d12a/GeralFragment" managed-name="Agrosens.Views.GeralFragment, Agrosens" managed-type-token-id="33554440" />
+    <entry java-name="crc648cf713a3b609d12a/HomeFragment" managed-name="Agrosens.Views.HomeFragment, Agrosens" managed-type-token-id="33554441" />
+    <entry java-name="crc648cf713a3b609d12a/PerfilFragment" managed-name="Agrosens.Views.PerfilFragment, Agrosens" managed-type-token-id="33554442" />
   </managed-to-java>
 </api>

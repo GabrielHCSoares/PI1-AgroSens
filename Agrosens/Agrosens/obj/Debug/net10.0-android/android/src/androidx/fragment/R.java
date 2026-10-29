@@ -19,9 +19,9 @@ public final class R {
 		public static final int fragment_open_exit = 0x7f02000a;
 	}
 	public static final class id {
-		public static final int fragment_container_view_tag = 0x7f08010f;
-		public static final int special_effects_controller_view_tag = 0x7f080209;
-		public static final int visible_removing_fragment_view_tag = 0x7f080279;
+		public static final int fragment_container_view_tag = 0x7f080117;
+		public static final int special_effects_controller_view_tag = 0x7f080212;
+		public static final int visible_removing_fragment_view_tag = 0x7f080285;
 	}
 	public static final class styleable {
 		public static final int[] Fragment = new int[] { 0x01010003, 0x010100d0, 0x010100d1 };

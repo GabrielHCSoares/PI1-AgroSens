@@ -54,12 +54,15 @@ layout\bottom_sheet_add_event;layout\bottom_sheet_add_event
 layout\fragment_about_us;layout\fragment_about_us
 layout\fragment_auth_welcome;layout\fragment_auth_welcome
 layout\fragment_calendar;layout\fragment_calendar
+layout\fragment_change_password;layout\fragment_change_password
 layout\fragment_edit_profile;layout\fragment_edit_profile
 layout\fragment_geral;layout\fragment_geral
 layout\fragment_home;layout\fragment_home
 layout\fragment_login_form;layout\fragment_login_form
 layout\fragment_perfil;layout\fragment_perfil
 layout\fragment_placeholder;layout\fragment_placeholder
+layout\fragment_privacy;layout\fragment_privacy
+layout\fragment_settings;layout\fragment_settings
 layout\fragment_signup_form;layout\fragment_signup_form
 mipmap\appicon;mipmap\appicon
 mipmap\appicon_background;mipmap\appicon_background

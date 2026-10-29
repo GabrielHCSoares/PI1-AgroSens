@@ -114,7 +114,7 @@ target triple = "aarch64-unknown-linux-android21"
 	i32 3, ; uint32_t package_naming_policy
 	i32 6, ; uint32_t environment_variable_count
 	i32 0, ; uint32_t system_property_count
-	i32 258, ; uint32_t number_of_assemblies_in_apk
+	i32 262, ; uint32_t number_of_assemblies_in_apk
 	i32 69, ; uint32_t bundled_assembly_name_width
 	i32 44, ; uint32_t number_of_dso_cache_entries
 	i32 0, ; uint32_t number_of_aot_cache_entries
@@ -1022,9 +1022,17 @@ target triple = "aarch64-unknown-linux-android21"
 @_XamarinAndroidBundledAssembly_name_100_100 = internal dso_local global [69 x i8] zeroinitializer, align 1
 @_XamarinAndroidBundledAssembly_file_name_101_101 = internal dso_local global [77 x i8] zeroinitializer, align 1
 @_XamarinAndroidBundledAssembly_name_101_101 = internal dso_local global [69 x i8] zeroinitializer, align 1
+@_XamarinAndroidBundledAssembly_file_name_102_102 = internal dso_local global [77 x i8] zeroinitializer, align 1
+@_XamarinAndroidBundledAssembly_name_102_102 = internal dso_local global [69 x i8] zeroinitializer, align 1
+@_XamarinAndroidBundledAssembly_file_name_103_103 = internal dso_local global [77 x i8] zeroinitializer, align 1
+@_XamarinAndroidBundledAssembly_name_103_103 = internal dso_local global [69 x i8] zeroinitializer, align 1
+@_XamarinAndroidBundledAssembly_file_name_104_104 = internal dso_local global [77 x i8] zeroinitializer, align 1
+@_XamarinAndroidBundledAssembly_name_104_104 = internal dso_local global [69 x i8] zeroinitializer, align 1
+@_XamarinAndroidBundledAssembly_file_name_105_105 = internal dso_local global [77 x i8] zeroinitializer, align 1
+@_XamarinAndroidBundledAssembly_name_105_105 = internal dso_local global [69 x i8] zeroinitializer, align 1
 
 ; Bundled assembly name buffers, all 69 bytes long
-@bundled_assemblies = dso_local local_unnamed_addr global [258 x %struct.XamarinAndroidBundledAssembly] [
+@bundled_assemblies = dso_local local_unnamed_addr global [262 x %struct.XamarinAndroidBundledAssembly] [
 	%struct.XamarinAndroidBundledAssembly {
 		i32 -1, ; int32_t file_fd
 		ptr @_XamarinAndroidBundledAssembly_file_name_0_0, ; char* file_name
@@ -3346,7 +3354,43 @@ target triple = "aarch64-unknown-linux-android21"
 		ptr null, ; uint8_t* data
 		i32 69, ; uint32_t name_length
 		ptr @_XamarinAndroidBundledAssembly_name_101_101; char* name
-	} ; 257
+	}, ; 257
+	%struct.XamarinAndroidBundledAssembly {
+		i32 -1, ; int32_t file_fd
+		ptr @_XamarinAndroidBundledAssembly_file_name_102_102, ; char* file_name
+		i32 0, ; uint32_t data_offset
+		i32 0, ; uint32_t data_size
+		ptr null, ; uint8_t* data
+		i32 69, ; uint32_t name_length
+		ptr @_XamarinAndroidBundledAssembly_name_102_102; char* name
+	}, ; 258
+	%struct.XamarinAndroidBundledAssembly {
+		i32 -1, ; int32_t file_fd
+		ptr @_XamarinAndroidBundledAssembly_file_name_103_103, ; char* file_name
+		i32 0, ; uint32_t data_offset
+		i32 0, ; uint32_t data_size
+		ptr null, ; uint8_t* data
+		i32 69, ; uint32_t name_length
+		ptr @_XamarinAndroidBundledAssembly_name_103_103; char* name
+	}, ; 259
+	%struct.XamarinAndroidBundledAssembly {
+		i32 -1, ; int32_t file_fd
+		ptr @_XamarinAndroidBundledAssembly_file_name_104_104, ; char* file_name
+		i32 0, ; uint32_t data_offset
+		i32 0, ; uint32_t data_size
+		ptr null, ; uint8_t* data
+		i32 69, ; uint32_t name_length
+		ptr @_XamarinAndroidBundledAssembly_name_104_104; char* name
+	}, ; 260
+	%struct.XamarinAndroidBundledAssembly {
+		i32 -1, ; int32_t file_fd
+		ptr @_XamarinAndroidBundledAssembly_file_name_105_105, ; char* file_name
+		i32 0, ; uint32_t data_offset
+		i32 0, ; uint32_t data_size
+		ptr null, ; uint8_t* data
+		i32 69, ; uint32_t name_length
+		ptr @_XamarinAndroidBundledAssembly_name_105_105; char* name
+	} ; 261
 ], align 8
 
 @assembly_store_bundled_assemblies = dso_local local_unnamed_addr global [0 x %struct.AssemblyStoreSingleAssemblyRuntimeData] zeroinitializer, align 8
@@ -3390,7 +3434,7 @@ target triple = "aarch64-unknown-linux-android21"
 !0 = !{i32 1, !"wchar_size", i32 4}
 !1 = !{i32 7, !"PIC Level", i32 2}
 !llvm.ident = !{!2}
-!2 = !{!".NET for Android remotes/origin/release/10.0.1xx @ d549e1dc4e2a083b08b4f24cb5495e81b99d79b5"}
+!2 = !{!".NET for Android remotes/origin/release/10.0.1xx @ db080b91dbe7947a69005a203ea98d9bb207ad04"}
 !3 = !{!4, !4, i64 0}
 !4 = !{!"any pointer", !5, i64 0}
 !5 = !{!"omnipotent char", !6, i64 0}

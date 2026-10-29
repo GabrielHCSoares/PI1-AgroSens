@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <!-- Top Bar: Botão Voltar (<) -->
+    <RelativeLayout
+        android:id="@+id/topBarPrivacy"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <TextView
+            android:id="@+id/btnBackPrivacy"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:text="❮"
+            android:textColor="#00B050"
+            android:textSize="22sp"
+            android:gravity="center"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="?attr/selectableItemBackgroundBorderless"/>
+
+    </RelativeLayout>
+
+    <!-- Conteúdo "Política de privacidade" com scroll -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/topBarPrivacy"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="40dp"
+            android:gravity="center_horizontal">
+
+            <!-- Seção 1: Título -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Política de Privacidade"
+                android:textColor="#52C480"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Esta Política de Privacidade explica como o AgroSens coleta, usa, armazena e protege as informações dos usuários do aplicativo. Ao utilizar o AgroSens, você concorda com as práticas descritas neste documento."
+                android:textColor="#4A4A4A"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:lineSpacingExtra="3dp"
+                android:layout_marginBottom="36dp"/>
+
+            <!-- Seção 2: Informações Coletadas -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Informações que coletamos:"
+                android:textColor="#52C480"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• Nome, e-mail e dados de cadastro informados pelo usuário;\n• Dados de localização e de sensores da propriedade rural, quando fornecidos;\n• Informações de uso do aplicativo e dados de desempenho do dispositivo."
+                android:textColor="#4A4A4A"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:lineSpacingExtra="3dp"
+                android:layout_marginBottom="36dp"/>
+
+            <!-- Seção 3: Uso das Informações -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Como usamos suas informações:"
+                android:textColor="#52C480"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="As informações são usadas para fornecer o monitoramento rural em tempo real, enviar notificações sobre a propriedade, melhorar o aplicativo e comunicar atualizações importantes ao usuário."
+                android:textColor="#4A4A4A"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:lineSpacingExtra="3dp"
+                android:layout_marginBottom="36dp"/>
+
+            <!-- Seção 4: Compartilhamento -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Compartilhamento de dados:"
+                android:textColor="#52C480"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="O AgroSens não compartilha dados pessoais com terceiros, exceto quando necessário para o funcionamento do serviço ou exigido por lei."
+                android:textColor="#4A4A4A"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:lineSpacingExtra="3dp"
+                android:layout_marginBottom="36dp"/>
+
+            <!-- Seção 5: Contato -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Entre em contato:"
+                android:textColor="#52C480"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dúvidas sobre esta política podem ser enviadas para: privacidade@agrosens.com"
+                android:textColor="#4A4A4A"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:lineSpacingExtra="4dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
