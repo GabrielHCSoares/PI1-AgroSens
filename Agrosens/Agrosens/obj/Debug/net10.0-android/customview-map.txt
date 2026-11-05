@@ -36,6 +36,7 @@ FrameLayout;obj\Debug\net10.0-android\res\layout\fragment_calendar.xml
 FrameLayout;obj\Debug\net10.0-android\res\layout\fragment_edit_profile.xml
 FrameLayout;obj\Debug\net10.0-android\res\layout\fragment_geral.xml
 FrameLayout;obj\Debug\net10.0-android\res\layout\fragment_home.xml
+FrameLayout;obj\Debug\net10.0-android\res\layout\fragment_map.xml
 FrameLayout;obj\Debug\net10.0-android\res\layout\fragment_perfil.xml
 FrameLayout;obj\Debug\net10.0-android\res\layout\fragment_signup_form.xml
 ImageView;obj\Debug\net10.0-android\res\layout\activity_calendar.xml
@@ -74,6 +75,7 @@ LinearLayout;obj\Debug\net10.0-android\res\layout\fragment_edit_profile.xml
 LinearLayout;obj\Debug\net10.0-android\res\layout\fragment_geral.xml
 LinearLayout;obj\Debug\net10.0-android\res\layout\fragment_home.xml
 LinearLayout;obj\Debug\net10.0-android\res\layout\fragment_login_form.xml
+LinearLayout;obj\Debug\net10.0-android\res\layout\fragment_map.xml
 LinearLayout;obj\Debug\net10.0-android\res\layout\fragment_perfil.xml
 LinearLayout;obj\Debug\net10.0-android\res\layout\fragment_placeholder.xml
 LinearLayout;obj\Debug\net10.0-android\res\layout\fragment_privacy.xml
@@ -104,6 +106,7 @@ RelativeLayout;obj\Debug\net10.0-android\res\layout\fragment_change_password.xml
 RelativeLayout;obj\Debug\net10.0-android\res\layout\fragment_edit_profile.xml
 RelativeLayout;obj\Debug\net10.0-android\res\layout\fragment_geral.xml
 RelativeLayout;obj\Debug\net10.0-android\res\layout\fragment_login_form.xml
+RelativeLayout;obj\Debug\net10.0-android\res\layout\fragment_map.xml
 RelativeLayout;obj\Debug\net10.0-android\res\layout\fragment_privacy.xml
 RelativeLayout;obj\Debug\net10.0-android\res\layout\fragment_settings.xml
 RelativeLayout;obj\Debug\net10.0-android\res\layout\fragment_signup_form.xml
@@ -118,6 +121,7 @@ ScrollView;obj\Debug\net10.0-android\res\layout\fragment_edit_profile.xml
 ScrollView;obj\Debug\net10.0-android\res\layout\fragment_geral.xml
 ScrollView;obj\Debug\net10.0-android\res\layout\fragment_home.xml
 ScrollView;obj\Debug\net10.0-android\res\layout\fragment_login_form.xml
+ScrollView;obj\Debug\net10.0-android\res\layout\fragment_map.xml
 ScrollView;obj\Debug\net10.0-android\res\layout\fragment_perfil.xml
 ScrollView;obj\Debug\net10.0-android\res\layout\fragment_privacy.xml
 ScrollView;obj\Debug\net10.0-android\res\layout\fragment_settings.xml
@@ -216,6 +220,7 @@ TextView;obj\Debug\net10.0-android\res\layout\fragment_edit_profile.xml
 TextView;obj\Debug\net10.0-android\res\layout\fragment_geral.xml
 TextView;obj\Debug\net10.0-android\res\layout\fragment_home.xml
 TextView;obj\Debug\net10.0-android\res\layout\fragment_login_form.xml
+TextView;obj\Debug\net10.0-android\res\layout\fragment_map.xml
 TextView;obj\Debug\net10.0-android\res\layout\fragment_perfil.xml
 TextView;obj\Debug\net10.0-android\res\layout\fragment_placeholder.xml
 TextView;obj\Debug\net10.0-android\res\layout\fragment_privacy.xml
@@ -242,3 +247,4 @@ View;obj\Debug\net10.0-android\res\layout\fragment_calendar.xml
 View;obj\Debug\net10.0-android\res\layout\fragment_geral.xml
 View;obj\Debug\net10.0-android\res\layout\fragment_home.xml
 View;obj\Debug\net10.0-android\res\layout\fragment_perfil.xml
+WebView;obj\Debug\net10.0-android\res\layout\fragment_map.xml

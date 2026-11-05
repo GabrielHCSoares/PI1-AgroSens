@@ -9,6 +9,9 @@
   <uses-sdk android:minSdkVersion="24" android:targetSdkVersion="36" />
   <!-- Permissão básica para o app poder acessar a internet no futuro -->
   <uses-permission android:name="android.permission.INTERNET" />
+  <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+  <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+  <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
   <application android:allowBackup="true" android:label="Agrosens" android:supportsRtl="true" android:theme="@android:style/Theme.Material.Light.NoActionBar" android:name="android.app.Application" android:icon="@mipmap/appicon" android:debuggable="true" android:extractNativeLibs="true">
     <activity android:icon="@mipmap/appicon" android:label="Agrosens" android:name="com.companyname.agrosens.MainActivity" android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:exported="true">
       <intent-filter>

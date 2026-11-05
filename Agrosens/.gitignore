@@ -1,0 +1,21 @@
+# Saída de build (regenerada em cada compilação)
+bin/
+obj/
+
+# Ambiente local / segredos (não commitar)
+.env
+.env.local
+*.local.properties
+local.properties
+
+# Visual Studio / Rider / .NET
+.vs/
+*.user
+*.userprefs
+*.suo
+*.csproj.user
+*.Debug
+*.Release
+
+# Packages
+*.nupkg

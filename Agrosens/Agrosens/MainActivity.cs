@@ -6,7 +6,10 @@ using Android.Views;
 using Android.Widget;
 using AndroidX.AppCompat.App;
 using Google.Android.Material.BottomSheet;
+using Android.Webkit;
+using System.Globalization;
 using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -42,6 +45,7 @@ namespace Agrosens
         private LinearLayout? _navPerfil;
         private FrameLayout? _btnCentral;
         private FrameLayout? _centralCircleBg;
+        private WebView? _mapWebView;
 
         private AppTab _currentTab = AppTab.Home;
         private bool _isLoggedOut = false;
@@ -198,9 +202,29 @@ namespace Agrosens
                 case AppTab.Mapa:
                     _navMapa?.SetBackgroundResource(Resource.Drawable.bg_tab_active_pill);
                     _centralCircleBg?.SetBackgroundResource(Resource.Drawable.bg_circle_black);
-                    View mapaView = LayoutInflater.Inflate(Resource.Layout.fragment_placeholder, _contentContainer, false)!;
+                    View mapaView = LayoutInflater.Inflate(Resource.Layout.fragment_map, _contentContainer, false)!;
+                    float density = Resources.DisplayMetrics.Density;
+                    int mapHeight = (int)(400 * density);
+                    mapaView.LayoutParameters = new FrameLayout.LayoutParams(
+                        ViewGroup.LayoutParams.MatchParent, mapHeight)
+                    {
+                        Gravity = GravityFlags.Center
+                    };
                     _contentContainer.AddView(mapaView);
-                    SetupPlaceholder(mapaView, "📍", "Mapeamento da Fazenda", "Visualização dos talhões, piquetes e localização dos sensores.");
+                    var webView = mapaView.FindViewById<WebView>(Resource.Id.mapWebView);
+                    if (webView != null)
+                    {
+                        _mapWebView = webView;
+                        _mapWebView.Settings.JavaScriptEnabled = true;
+                        _mapWebView.Settings.DomStorageEnabled = true;
+                        var lat = -15.7801;
+                        var lon = -47.9292;
+                        var zoom = 13;
+                        string ls = lat.ToString(CultureInfo.InvariantCulture);
+                        string lo = lon.ToString(CultureInfo.InvariantCulture);
+                        string html = "<html><head><meta name='viewport' content='width=device-width,initial-scale=1'/><link rel='stylesheet' href='https://unpkg.com/leaflet@1.9.4/dist/leaflet.css'/><script src='https://unpkg.com/leaflet@1.9.4/dist/leaflet.js'></script><style>html,body,#map{height:100%;margin:0}</style></head><body><div id='map'></div><script>var m=L.map('map').setView([" + ls + "," + lo + "]," + zoom + ");L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:19}).addTo(m);window.mapObj=m;</script></body></html>";
+                        _mapWebView.LoadDataWithBaseURL(null, html, "text/html", "UTF-8", null);
+                    }
                     break;
 
                 case AppTab.Perfil:
@@ -1519,6 +1543,28 @@ namespace Agrosens
             {
                 _ = LoadCalendarDayEventsAsync();
             }
+
+            _ = LoadHomeEventsAsync();
+        }
+
+        protected override void OnPause()
+        {
+            base.OnPause();
+        }
+
+        protected override void OnDestroy()
+        {
+            base.OnDestroy();
+        }
+
+        protected override void OnSaveInstanceState(Bundle outState)
+        {
+            base.OnSaveInstanceState(outState);
+        }
+
+        public override void OnLowMemory()
+        {
+            base.OnLowMemory();
         }
 
         private void BuildHomeWeekDays()

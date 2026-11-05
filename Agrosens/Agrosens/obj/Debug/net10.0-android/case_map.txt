@@ -59,6 +59,7 @@ layout\fragment_edit_profile;layout\fragment_edit_profile
 layout\fragment_geral;layout\fragment_geral
 layout\fragment_home;layout\fragment_home
 layout\fragment_login_form;layout\fragment_login_form
+layout\fragment_map;layout\fragment_map
 layout\fragment_perfil;layout\fragment_perfil
 layout\fragment_placeholder;layout\fragment_placeholder
 layout\fragment_privacy;layout\fragment_privacy

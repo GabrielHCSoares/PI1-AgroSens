@@ -12,6 +12,10 @@ public class MainActivity
 		__md_methods = 
 			"n_onCreate:(Landroid/os/Bundle;)V:GetOnCreate_Landroid_os_Bundle_Handler\n" +
 			"n_onResume:()V:GetOnResumeHandler\n" +
+			"n_onPause:()V:GetOnPauseHandler\n" +
+			"n_onDestroy:()V:GetOnDestroyHandler\n" +
+			"n_onSaveInstanceState:(Landroid/os/Bundle;)V:GetOnSaveInstanceState_Landroid_os_Bundle_Handler\n" +
+			"n_onLowMemory:()V:GetOnLowMemoryHandler\n" +
 			"";
 		mono.android.Runtime.register ("Agrosens.MainActivity, Agrosens", MainActivity.class, __md_methods);
 	}
@@ -45,6 +49,34 @@ public class MainActivity
 	}
 
 	private native void n_onResume ();
+
+	public void onPause ()
+	{
+		n_onPause ();
+	}
+
+	private native void n_onPause ();
+
+	public void onDestroy ()
+	{
+		n_onDestroy ();
+	}
+
+	private native void n_onDestroy ();
+
+	public void onSaveInstanceState (android.os.Bundle p0)
+	{
+		n_onSaveInstanceState (p0);
+	}
+
+	private native void n_onSaveInstanceState (android.os.Bundle p0);
+
+	public void onLowMemory ()
+	{
+		n_onLowMemory ();
+	}
+
+	private native void n_onLowMemory ();
 
 	private java.util.ArrayList refList;
 	public void monodroidAddReference (java.lang.Object obj)
