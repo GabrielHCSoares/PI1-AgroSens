@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="20dp">
+
+        <!-- ============ HEADER ============ -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="20dp"
+            android:paddingBottom="16dp"
+            android:gravity="center_vertical">
+
+            <FrameLayout
+                android:layout_width="52dp"
+                android:layout_height="52dp">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bg_circle_avatar"/>
+
+                <ImageView
+                    android:id="@+id/detailImgUser"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/user_photo"
+                    android:scaleType="centerCrop"
+                    android:background="@drawable/bg_circle_avatar"
+                    android:clipToOutline="true"/>
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="14dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Olá!, Bem-Vindo De Volta"
+                    android:textSize="13sp"
+                    android:textColor="#52D172"/>
+
+                <TextView
+                    android:id="@+id/detailTxtUserName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#1B3A24"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- ============ PAINEL DO CLIMA ============ -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:background="@drawable/bg_card_mint"
+            android:orientation="vertical"
+            android:padding="12dp">
+
+            <TextView
+                android:id="@+id/detailBtnBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="4dp"
+                android:paddingBottom="8dp"
+                android:paddingRight="12dp"
+                android:text="‹  VOLTAR TELA INICIAL"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:textColor="#2E9E4F"
+                android:clickable="true"
+                android:focusable="true"/>
+
+            <TextView
+                android:id="@+id/detailDateTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="#1B3A24"/>
+
+            <!-- Linha 1: Chuva + Vento -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!-- CHUVA -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="170dp"
+                    android:layout_weight="1"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/bg_card_weather"
+                    android:orientation="vertical"
+                    android:padding="14dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="💧 CHUVA"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:textColor="#2E7D32"/>
+
+                    <TextView
+                        android:id="@+id/detailRainValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="--"
+                        android:textSize="30sp"
+                        android:textColor="#FFFFFF"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="acumulados no dia"
+                        android:textSize="13sp"
+                        android:textStyle="bold"
+                        android:textColor="#FFFFFF"/>
+
+                    <TextView
+                        android:id="@+id/detailRainSub"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:text=""
+                        android:textSize="12sp"
+                        android:textColor="#F1FAF3"/>
+                </LinearLayout>
+
+                <!-- VENTO -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="170dp"
+                    android:layout_weight="1"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/bg_card_weather"
+                    android:orientation="vertical"
+                    android:padding="14dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="🍃 VENTO"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:textColor="#2E7D32"/>
+
+                    <FrameLayout
+                        android:layout_width="108dp"
+                        android:layout_height="108dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="6dp">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/bg_compass_ring"/>
+
+                        <!-- Marcador gira conforme a direção de onde o vento vem -->
+                        <FrameLayout
+                            android:id="@+id/detailWindArrow"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="top|center_horizontal"
+                                android:layout_marginTop="14dp"
+                                android:text="▼"
+                                android:textSize="11sp"
+                                android:textColor="#2E7D32"/>
+                        </FrameLayout>
+
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:layout_gravity="top|center_horizontal" android:layout_marginTop="2dp"
+                            android:text="N" android:textSize="11sp" android:textStyle="bold" android:textColor="#FFFFFF"/>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:layout_gravity="bottom|center_horizontal" android:layout_marginBottom="2dp"
+                            android:text="S" android:textSize="11sp" android:textStyle="bold" android:textColor="#FFFFFF"/>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:layout_gravity="start|center_vertical" android:layout_marginLeft="5dp"
+                            android:text="O" android:textSize="11sp" android:textStyle="bold" android:textColor="#FFFFFF"/>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:layout_gravity="end|center_vertical" android:layout_marginRight="5dp"
+                            android:text="L" android:textSize="11sp" android:textStyle="bold" android:textColor="#FFFFFF"/>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:orientation="vertical"
+                            android:gravity="center">
+                            <TextView
+                                android:id="@+id/detailWindValue"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="--"
+                                android:textSize="22sp"
+                                android:textColor="#FFFFFF"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="km/h"
+                                android:textSize="11sp"
+                                android:textColor="#FFFFFF"/>
+                        </LinearLayout>
+                    </FrameLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Linha 2: Sensação térmica + Umidade -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!-- SENSAÇÃO TÉRMICA -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="170dp"
+                    android:layout_weight="1"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/bg_card_weather"
+                    android:orientation="vertical"
+                    android:padding="14dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="🌡️ SENSAÇÃO TÉRMICA"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:textColor="#2E7D32"/>
+
+                    <TextView
+                        android:id="@+id/detailFeelsValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="--"
+                        android:textSize="38sp"
+                        android:textColor="#FFFFFF"/>
+
+                    <TextView
+                        android:id="@+id/detailFeelsSub"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="14dp"
+                        android:text=""
+                        android:textSize="12sp"
+                        android:textColor="#F1FAF3"/>
+                </LinearLayout>
+
+                <!-- UMIDADE -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="170dp"
+                    android:layout_weight="1"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/bg_card_weather"
+                    android:orientation="vertical"
+                    android:padding="14dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="💦 UMIDADE"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:textColor="#2E7D32"/>
+
+                    <TextView
+                        android:id="@+id/detailHumidityValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="--"
+                        android:textSize="38sp"
+                        android:textColor="#FFFFFF"/>
+
+                    <TextView
+                        android:id="@+id/detailHumiditySub"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="14dp"
+                        android:text=""
+                        android:textSize="12sp"
+                        android:textColor="#F1FAF3"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/detailSummary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:gravity="center"
+                android:text=""
+                android:textSize="12sp"
+                android:textColor="#3E5C46"/>
+        </LinearLayout>
+
+        <!-- ============ TAREFAS DO DIA ============ -->
+        <TextView
+            android:id="@+id/detailCounter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="VOCÊ TEM 0 EVENTOS NESTE DIA!"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:textColor="#2E7D32"
+            android:gravity="center"
+            android:layout_marginTop="18dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/bg_card_mint"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <LinearLayout
+                android:id="@+id/detailEventsContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/detailEmpty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nenhum compromisso neste dia"
+                android:textSize="14sp"
+                android:textColor="#5A7A62"
+                android:gravity="center"
+                android:padding="16dp"
+                android:visibility="gone"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

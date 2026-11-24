@@ -221,7 +221,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_marginBottom="8dp">
+        android:layout_marginBottom="24dp">
 
 		<!-- Chip: Reunião (selecionado, borda roxa) -->
 		<LinearLayout
@@ -282,18 +282,6 @@
                 android:textColor="#1B3A24"/>
 		</LinearLayout>
 	</LinearLayout>
-
-	<!-- + Add new -->
-	<TextView
-        android:id="@+id/btnAddCategory"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="+ Add new"
-        android:textSize="13sp"
-        android:textColor="#2E7D32"
-        android:layout_marginBottom="24dp"
-        android:clickable="true"
-        android:focusable="true"/>
 
 	<!-- Botão: Criar Evento -->
 	<TextView

@@ -1,64 +1,57 @@
 # AgroSens
 
-App mobile de monitoramento rural (disciplina PI1). Dashboard principal com mapa interativo da fazenda (tratores, implementos e porteiras).
+App mobile de monitoramento rural (disciplina PI1). Abas: Geral, Calendário, Mapa, Perfil.
 
-## Mapa (Mapbox)
+## Mapa (WebView + Leaflet + OpenStreetMap)
 
-O mapa foi migrado do **Google Maps** para o **Mapbox** com estilo de satélite (`mapbox://styles/mapbox/satellite-streets-v12`, configurável pela constante `EstiloSatelite` em `MainActivity.cs`).
+A aba "Mapa" exibe um mapa interativo da propriedade usando WebView com a biblioteca Leaflet e tiles do OpenStreetMap. Não há dependência do Mapbox nem necessidade de access token.
 
-### 1. Obter os tokens
+### Funcionalidades do mapa
 
-Acesse https://account.mapbox.com e crie:
+- Mapa arrastável com controles de zoom do Leaflet e atribuição do OpenStreetMap.
+- Abre na posição padrão (-15.7801, -47.9292, zoom 13) quando não há localização salva.
+- Abre na localização salva (`farm_lat`, `farm_lng`, `farm_zoom`) quando existir, persistindo entre reinicializações do app (incluindo desligar o celular).
+- Card "Resumo da propriedade" exibe a linha "Localização salva: <lat>, <lng>" com 4 casas decimais (formato invariante) ou "não definida".
 
-- **Access token (público)** — "Access tokens" → "Create a token". Usado para carregar os estilos/tiles do mapa.
-- **Downloads token (secreto)** — "Downloads tokens". Usado somente na compilação para baixar o SDK nativo do Mapbox do repositório Maven privado.
+### Fluxo de salvar localização (dois modos)
 
-### 2. Configurar o ambiente
+**Modo Normal** (padrão ao abrir a aba):
+- Mapa limpo: apenas controles de zoom e atribuição do Leaflet.
+- Cabeçalho com título "Mapa da propriedade" (linha 1, largura total) e botão verde arredondado "Salvar localização" (linha 2, ícone de pin 18dp, texto 13sp, maxLines 1).
+- Se houver localização salva, aparece também o botão "Ir para minha fazenda" (estilo contorno verde, ícone de alvo 18dp) ao lado, que recentra o mapa no ponto salvo.
 
-Copie `.env.example` para `.env` e preencha com os seus valores (o `.env` é ignorado pelo git):
+**Modo de Seleção** (ao tocar em "Salvar localização"):
+- Aparece a mira central no centro exato do WebView (não bloqueia arrasto) e a dica "Arraste o mapa até a sua fazenda e toque em Confirmar" em faixa sobre o topo do mapa.
+- O cabeçalho mostra os botões "Confirmar" (verde) e "Cancelar" (contorno cinza) na mesma linha.
+- Cancelar: esconde mira e dica, volta ao modo normal sem salvar.
+- Confirmar: obtém o centro via `EvaluateJavascript` (`getCenter()`/`getZoom()`), parse com `CultureInfo.InvariantCulture`, valida lat [-90, 90] e lng [-180, 180], pede confirmação para substituir se já existir, grava `farm_lat`/`farm_lng`/`farm_zoom` em `ISharedPreferences` (arquivo `agrosens_map`) com precisão completa (strings invariantes), exibe toast "Localização da fazenda salva" e atualiza o card. Se a leitura falhar, exibe toast "Não foi possível salvar a localização" e registra `Log.Error("AgroSensMap", ...)`.
 
-```bash
-cp .env.example .env
-```
+### Persistência
 
-O token de acesso ao mapa é lido da variável de ambiente `MAPBOX_ACCESS_TOKEN` no `MainActivity.cs`:
+A localização da fazenda é salva em `ISharedPreferences` (chaves `farm_lat`, `farm_lng`, `farm_zoom`, arquivo `agrosens_map`) e nunca é limpa por reset de sensores ou de dados.
 
-```csharp
-MapboxOptions.AccessToken = Environment.GetEnvironmentVariable("MAPBOX_ACCESS_TOKEN") ?? string.Empty;
-```
-
-Defina `MAPBOX_ACCESS_TOKEN` no ambiente antes de executar (ou adicione ao `.env` e carregue com o seu gerenciador de variáveis de ambiente).
-
-### 3. Compilar o Android (requer Downloads token)
-
-O binding `Com.Mapbox.Maps.Android` baixa o SDK nativo do Mapbox de um repositório Maven privado. É necessário autenticar o Gradle com o `MAPBOX_DOWNLOADS_TOKEN`.
-
-Adicione ao `~/.gradle/gradle.properties` (ou exporte como variável de ambiente):
-
-```properties
-MAPBOX_DOWNLOADS_TOKEN=sk.seu_token_de_download_do_mapbox_aqui
-```
-
-### 4. Compilar e rodar
+## Compilar
 
 ```bash
 dotnet build Agrosens/Agrosens.csproj
 dotnet run --project Agrosens/Agrosens.csproj
 ```
 
-### Arquivos alterados na migração
+Requer SDK do Android (ANDROID_HOME) e o workload do .NET para Android instalados.
 
-- `Agrosens.csproj` — remove `Xamarin.GooglePlayServices.Maps`, adiciona `Com.Mapbox.Maps.Android`.
-- `AndroidManifest.xml` — remove `meta-data com.google.android.geo.API_KEY`; mantém permissões de localização.
-- `Resources/layout/fragment_map.xml` — `com.mapbox.maps.MapView` no lugar do `MapView` do Google.
-- `MainActivity.cs` — `MapboxMap` no lugar de `GoogleMap`; estilo satélite; ciclo de vida do `MapView`; token lido de `MAPBOX_ACCESS_TOKEN`; marcadores (tratores/implementos/porteiras), câmera inicial e métodos de atualização de posições.
-- `.gitignore` — ignora `bin/`, `obj/`, `.env`, `local.properties`.
-- `.env.example` — exemplo de variáveis (valores fictícios).
-- `README.md` — instruções de token e compilação.
+## Arquivos principais
 
-### Passos manuais pendentes
+- `Agrosens/MainActivity.cs` — navegação por abas, WebView/Leaflet, fluxo de salvar localização, persistência da fazenda.
+- `Agrosens/Resources/layout/fragment_map.xml` — layout da aba Mapa (título em duas linhas, linha de ações, WebView, card Resumo da propriedade).
+- `Agrosens/Resources/drawable/bg_btn_green_outline.xml` — fundo contorno verde para "Ir para minha fazenda" e "Cancelar".
+- `Agrosens/Services/DatabaseService.cs` — banco SQLite (tarefas, eventos, sensores).
+- `Agrosens/Services/PreferenceService.cs` — sessão de usuário (login/nome/e-mail).
 
-1. Criar os tokens em https://account.mapbox.com (access token + downloads token).
-2. Preencher `.env` e definir `MAPBOX_ACCESS_TOKEN` no ambiente.
-3. Configurar `MAPBOX_DOWNLOADS_TOKEN` em `~/.gradle/gradle.properties` para compilar o Android.
-4. Compilar com `dotnet build` e ajustar, se necessário, assinaturas exatas do binding `Com.Mapbox.Maps.Android` (construtor de `CameraOptions` e criação do gerenciador de anotações).
+## Layout da aba Mapa
+
+O layout é fixo, sem rolagem de tela:
+
+1. Título "Mapa da propriedade" (linha 1, 20sp, negrito, verde escuro, maxLines 1).
+2. Linha de ações (botões "Salvar localização" / "Confirmar" e opcionalmente "Ir para minha fazenda" / "Cancelar"), width 0 + weight 1, ellipsize + maxLines 1.
+3. Mapa (WebView) com `layout_weight="1"`, ocupando o espaço restante.
+4. Card "Resumo da propriedade" ancorado embaixo.

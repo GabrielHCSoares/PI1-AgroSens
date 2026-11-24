@@ -20,51 +20,17 @@ namespace Agrosens.Views
       var view = inflater.Inflate(Resource.Layout.bottom_sheet_add_event,
                                   container, false);
 
-      var etEventName = view.FindViewById<EditText>(Resource.Id.etEventName);
       var etNotes = view.FindViewById<EditText>(Resource.Id.etNotes);
       var etDate = view.FindViewById<EditText>(Resource.Id.etDate);
 
-      // Chips de categoria
-      var chipReuniao = view.FindViewById<LinearLayout>(Resource.Id.chipReuniao);
-      var chipManutencao = view.FindViewById<LinearLayout>(Resource.Id.chipManutencao);
-
       // Toggle de lembrete
       var switchReminder = view.FindViewById<Switch>(Resource.Id.switchReminder);
-
-      // Botão "+ Add new"
-      var btnAddCategory = view.FindViewById<TextView>(Resource.Id.btnAddCategory);
 
       // Botão "Criar Evento": fecha o sheet (sem salvar no banco)
       var btnCreateEvent = view.FindViewById<TextView>(Resource.Id.btnCreateEvent);
       if (btnCreateEvent != null)
       {
-        btnCreateEvent.Click += (s, e) =>
-        {
-          string name = etEventName?.Text?.Trim() ?? "";
-          string msg = string.IsNullOrEmpty(name)
-              ? "Evento criado com sucesso! (Simulação)"
-              : $"Evento '{name}' criado com sucesso! (Simulação)";
-          Toast.MakeText(Context, msg, ToastLength.Short)?.Show();
-          Dismiss();
-        };
-      }
-
-      if (chipReuniao != null)
-      {
-        chipReuniao.Click += (s, e) =>
-            Toast.MakeText(Context, "Categoria selecionada: Reunião", ToastLength.Short)?.Show();
-      }
-
-      if (chipManutencao != null)
-      {
-        chipManutencao.Click += (s, e) =>
-            Toast.MakeText(Context, "Categoria selecionada: Manutenção", ToastLength.Short)?.Show();
-      }
-
-      if (btnAddCategory != null)
-      {
-        btnAddCategory.Click += (s, e) =>
-            Toast.MakeText(Context, "Adicionar nova categoria", ToastLength.Short)?.Show();
+        btnCreateEvent.Click += (s, e) => Dismiss();
       }
 
       return view;

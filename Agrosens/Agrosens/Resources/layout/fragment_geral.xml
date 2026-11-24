@@ -11,8 +11,8 @@
         android:orientation="vertical"
         android:paddingLeft="18dp"
         android:paddingRight="18dp"
-        android:paddingTop="40dp"
-        android:paddingBottom="30dp">
+        android:paddingTop="16dp"
+        android:paddingBottom="140dp">
 
 		<!-- ===== CABEÇALHO: Area de monitoramento + Botão Adicionar (+) ===== -->
 		<RelativeLayout
@@ -53,314 +53,73 @@
 
 		</RelativeLayout>
 
-		<!-- ===== CARD 1: Galpão ===== -->
-		<LinearLayout
-            android:id="@+id/cardGalpao"
+		<!-- ===== SEÇÃO: Sensores cadastrados ===== -->
+		<TextView
+            android:id="@+id/txtSensoresSectionTitle"
             android:layout_width="match_parent"
-            android:layout_height="110dp"
-            android:layout_marginBottom="16dp"
-            android:background="@drawable/bg_card_green_rounded"
-            android:orientation="horizontal"
-            android:gravity="center_vertical"
-            android:padding="16dp">
+            android:layout_height="wrap_content"
+            android:text="Sensores cadastrados"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="#1B3A24"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="8dp"/>
 
-			<LinearLayout
-                android:layout_width="72dp"
-                android:layout_height="match_parent"
-                android:orientation="vertical"
-                android:gravity="center">
-
-				<FrameLayout
-                    android:layout_width="64dp"
-                    android:layout_height="64dp">
-
-					<ProgressBar
-                        android:id="@+id/progressGalpao"
-                        style="?android:attr/progressBarStyleHorizontal"
-                        android:layout_width="64dp"
-                        android:layout_height="64dp"
-                        android:progressDrawable="@drawable/bg_circular_progress_white"
-                        android:progress="50"
-                        android:rotation="-90"/>
-
-					<FrameLayout
-                        android:layout_width="48dp"
-                        android:layout_height="48dp"
-                        android:layout_gravity="center"
-                        android:background="@drawable/bg_circle_white_solid">
-						<ImageView
-                            android:layout_width="26dp"
-                            android:layout_height="26dp"
-                            android:layout_gravity="center"
-                            android:src="@drawable/ic_car_green"/>
-					</FrameLayout>
-				</FrameLayout>
-
-				<TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="4dp"
-                    android:text="Galpão"
-                    android:textSize="10sp"
-                    android:textColor="#FFFFFF"
-                    android:gravity="center"/>
-				<TextView
-                    android:id="@+id/txtCounterGalpao"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="4dp"
-                    android:text="2/4"
-                    android:textSize="12sp"
-                    android:textStyle="bold"
-                    android:textColor="#FFFFFF"
-                    android:gravity="center"/>
-			</LinearLayout>
-
-			<View
-                android:layout_width="1dp"
-                android:layout_height="match_parent"
-                android:background="#6DBF72"
-                android:layout_marginLeft="12dp"
-                android:layout_marginRight="18dp"/>
-
-			<TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="2 Veiculos Sairam Do Seu Galpão As 9h"
-                android:textSize="15sp"
-                android:textStyle="bold"
-                android:textColor="#FFFFFF"/>
-		</LinearLayout>
-
-		<!-- ===== CARD 2: Água ===== -->
 		<LinearLayout
-            android:id="@+id/cardAgua"
+            android:id="@+id/sensoresContainer"
             android:layout_width="match_parent"
-            android:layout_height="110dp"
-            android:layout_marginBottom="16dp"
-            android:background="@drawable/bg_card_green_rounded"
-            android:orientation="horizontal"
-            android:gravity="center_vertical"
-            android:padding="16dp">
+            android:layout_height="wrap_content"
+            android:orientation="vertical"/>
 
-			<LinearLayout
-                android:layout_width="72dp"
-                android:layout_height="match_parent"
-                android:orientation="vertical"
-                android:gravity="center">
+		<!-- ===== ESTADO VAZIO ===== -->
+		<ImageView
+            android:id="@+id/imgSensoresEmpty"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/ic_empty_sensor"
+            android:visibility="gone"/>
 
-				<FrameLayout
-                    android:layout_width="64dp"
-                    android:layout_height="64dp">
-
-					<ProgressBar
-                        android:id="@+id/progressAgua"
-                        style="?android:attr/progressBarStyleHorizontal"
-                        android:layout_width="64dp"
-                        android:layout_height="64dp"
-                        android:progressDrawable="@drawable/bg_circular_progress_white"
-                        android:progress="30"
-                        android:rotation="-90"/>
-
-					<FrameLayout
-                        android:layout_width="48dp"
-                        android:layout_height="48dp"
-                        android:layout_gravity="center"
-                        android:background="@drawable/bg_circle_white_solid">
-						<TextView
-                            android:id="@+id/txtCounterAgua"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:text="30%"
-                            android:textSize="13sp"
-                            android:textStyle="bold"
-                            android:textColor="#2E7D32"/>
-					</FrameLayout>
-				</FrameLayout>
-
-				<TextView
-                    android:id="@+id/txtCounterGalpao"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="4dp"
-                    android:text="2/4"
-                    android:textSize="12sp"
-                    android:textStyle="bold"
-                    android:textColor="#FFFFFF"
-                    android:gravity="center"/>
-			</LinearLayout>
-
-			<View
-                android:layout_width="1dp"
-                android:layout_height="match_parent"
-                android:background="#6DBF72"
-                android:layout_marginLeft="12dp"
-                android:layout_marginRight="18dp"/>
-
-			<TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Nivel Precario De Água"
-                android:textSize="15sp"
-                android:textStyle="bold"
-                android:textColor="#FFFFFF"/>
-		</LinearLayout>
-
-		<!-- ===== CARD 3: Silagem ===== -->
-		<LinearLayout
-            android:id="@+id/cardSilagem"
+		<TextView
+            android:id="@+id/txtSensoresEmpty"
             android:layout_width="match_parent"
-            android:layout_height="110dp"
-            android:layout_marginBottom="16dp"
-            android:background="@drawable/bg_card_green_rounded"
-            android:orientation="horizontal"
-            android:gravity="center_vertical"
-            android:padding="16dp">
+            android:layout_height="wrap_content"
+            android:text="Nenhum sensor cadastrado"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="#1B3A24"
+            android:gravity="center"
+            android:visibility="gone"
+            android:layout_marginTop="16dp"/>
 
-			<LinearLayout
-                android:layout_width="72dp"
-                android:layout_height="match_parent"
-                android:orientation="vertical"
-                android:gravity="center">
-
-				<FrameLayout
-                    android:layout_width="64dp"
-                    android:layout_height="64dp">
-
-					<ProgressBar
-                        android:id="@+id/progressSilagem"
-                        style="?android:attr/progressBarStyleHorizontal"
-                        android:layout_width="64dp"
-                        android:layout_height="64dp"
-                        android:progressDrawable="@drawable/bg_circular_progress_white"
-                        android:progress="50"
-                        android:rotation="-90"/>
-
-					<FrameLayout
-                        android:layout_width="48dp"
-                        android:layout_height="48dp"
-                        android:layout_gravity="center"
-                        android:background="@drawable/bg_circle_white_solid">
-						<TextView
-                            android:id="@+id/txtCounterSilagem"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:text="50%"
-                            android:textSize="13sp"
-                            android:textStyle="bold"
-                            android:textColor="#2E7D32"/>
-					</FrameLayout>
-				</FrameLayout>
-
-				<TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="4dp"
-                    android:text="Silagem"
-                    android:textSize="10sp"
-                    android:textColor="#FFFFFF"
-                    android:gravity="center"/>
-			</LinearLayout>
-
-			<View
-                android:layout_width="1dp"
-                android:layout_height="match_parent"
-                android:background="#6DBF72"
-                android:layout_marginLeft="12dp"
-                android:layout_marginRight="18dp"/>
-
-			<TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Silagem Esta Na Metade"
-                android:textSize="15sp"
-                android:textStyle="bold"
-                android:textColor="#FFFFFF"/>
-		</LinearLayout>
-
-		<!-- ===== CARD 4: Porteiras ===== -->
-		<LinearLayout
-            android:id="@+id/cardPorteiras"
+		<TextView
+            android:id="@+id/txtSensoresEmptySub"
             android:layout_width="match_parent"
-            android:layout_height="110dp"
-            android:layout_marginBottom="16dp"
-            android:background="@drawable/bg_card_green_rounded"
-            android:orientation="horizontal"
-            android:gravity="center_vertical"
-            android:padding="16dp">
+            android:layout_height="wrap_content"
+            android:text="Toque no + para adicionar seu primeiro sensor"
+            android:textSize="12sp"
+            android:textColor="#6B7A72"
+            android:gravity="center"
+            android:visibility="gone"
+            android:layout_marginBottom="12dp"/>
 
-			<LinearLayout
-                android:layout_width="72dp"
-                android:layout_height="match_parent"
-                android:orientation="vertical"
-                android:gravity="center">
-
-				<FrameLayout
-                    android:layout_width="64dp"
-                    android:layout_height="64dp">
-
-					<ProgressBar
-                        android:id="@+id/progressPorteiras"
-                        style="?android:attr/progressBarStyleHorizontal"
-                        android:layout_width="64dp"
-                        android:layout_height="64dp"
-                        android:progressDrawable="@drawable/bg_circular_progress_white"
-                        android:progress="50"
-                        android:rotation="-90"/>
-
-					<FrameLayout
-                        android:layout_width="48dp"
-                        android:layout_height="48dp"
-                        android:layout_gravity="center"
-                        android:background="@drawable/bg_circle_white_solid">
-						<ImageView
-                            android:layout_width="26dp"
-                            android:layout_height="26dp"
-                            android:layout_gravity="center"
-                            android:src="@drawable/ic_gate_green"/>
-					</FrameLayout>
-				</FrameLayout>
-
-				<TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="4dp"
-                    android:text="Porteiras"
-                    android:textSize="10sp"
-                    android:textColor="#FFFFFF"
-                    android:gravity="center"/>
-				<TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="2/4"
-                    android:textSize="12sp"
-                    android:textStyle="bold"
-                    android:textColor="#FFFFFF"
-                    android:gravity="center"/>
-			</LinearLayout>
-
-			<View
-                android:layout_width="1dp"
-                android:layout_height="match_parent"
-                android:background="#6DBF72"
-                android:layout_marginLeft="12dp"
-                android:layout_marginRight="18dp"/>
-
-			<TextView
-                android:id="@+id/txtCounterPorteiras"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="2 Porteiras Abertas"
-                android:textSize="15sp"
-                android:textStyle="bold"
-                android:textColor="#FFFFFF"/>
-		</LinearLayout>
+		<TextView
+            android:id="@+id/btnSensoresEmptyAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Adicionar sensor"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="#2E7D32"
+            android:gravity="center"
+            android:visibility="gone"
+            android:clickable="true"
+            android:focusable="true"
+            android:paddingLeft="14dp"
+            android:paddingRight="14dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"/>
 
 	</LinearLayout>
 </ScrollView>

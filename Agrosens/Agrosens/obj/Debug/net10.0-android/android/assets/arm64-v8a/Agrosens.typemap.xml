@@ -1,18 +1,30 @@
-<api type="debug" assembly-name="Agrosens" mvid="a7a47e4bac254726843df0117bf1ffde">
+<api type="debug" assembly-name="Agrosens" mvid="2b9467fe446d4ecda63b085c35b30d27">
   <java-to-managed>
-    <entry java-name="com/companyname/agrosens/MainActivity" managed-name="Agrosens.MainActivity, Agrosens" managed-type-token-id="33554435" />
-    <entry java-name="crc648cf713a3b609d12a/AddEventBottomSheet" managed-name="Agrosens.Views.AddEventBottomSheet, Agrosens" managed-type-token-id="33554437" />
-    <entry java-name="crc648cf713a3b609d12a/CalendarFragment" managed-name="Agrosens.Views.CalendarFragment, Agrosens" managed-type-token-id="33554438" />
-    <entry java-name="crc648cf713a3b609d12a/GeralFragment" managed-name="Agrosens.Views.GeralFragment, Agrosens" managed-type-token-id="33554439" />
-    <entry java-name="crc648cf713a3b609d12a/HomeFragment" managed-name="Agrosens.Views.HomeFragment, Agrosens" managed-type-token-id="33554440" />
-    <entry java-name="crc648cf713a3b609d12a/PerfilFragment" managed-name="Agrosens.Views.PerfilFragment, Agrosens" managed-type-token-id="33554441" />
+    <entry java-name="com/companyname/agrosens/MainActivity" managed-name="Agrosens.MainActivity, Agrosens" managed-type-token-id="33554436" />
+    <entry java-name="com/companyname/agrosens/MainActivity_MapWebViewClient" managed-name="Agrosens.MainActivity+MapWebViewClient, Agrosens" managed-type-token-id="33554455" />
+    <entry java-name="com/companyname/agrosens/MainActivity_StatusBarInsetsListener" managed-name="Agrosens.MainActivity+StatusBarInsetsListener, Agrosens" managed-type-token-id="33554456" />
+    <entry java-name="com/companyname/agrosens/MainActivity_LayoutListener" managed-name="Agrosens.MainActivity+LayoutListener, Agrosens" managed-type-token-id="33554457" />
+    <entry java-name="com/companyname/agrosens/MainActivity_MapWebChromeClient" managed-name="Agrosens.MainActivity+MapWebChromeClient, Agrosens" managed-type-token-id="33554458" />
+    <entry java-name="com/companyname/agrosens/MainActivity_MapValueCallback" managed-name="Agrosens.MainActivity+MapValueCallback, Agrosens" managed-type-token-id="33554459" />
+    <entry java-name="crc648cf713a3b609d12a/AddEventBottomSheet" managed-name="Agrosens.Views.AddEventBottomSheet, Agrosens" managed-type-token-id="33554438" />
+    <entry java-name="crc648cf713a3b609d12a/AddSensorBottomSheet" managed-name="Agrosens.Views.AddSensorBottomSheet, Agrosens" managed-type-token-id="33554439" />
+    <entry java-name="crc648cf713a3b609d12a/CalendarFragment" managed-name="Agrosens.Views.CalendarFragment, Agrosens" managed-type-token-id="33554440" />
+    <entry java-name="crc648cf713a3b609d12a/GeralFragment" managed-name="Agrosens.Views.GeralFragment, Agrosens" managed-type-token-id="33554441" />
+    <entry java-name="crc648cf713a3b609d12a/HomeFragment" managed-name="Agrosens.Views.HomeFragment, Agrosens" managed-type-token-id="33554442" />
+    <entry java-name="crc648cf713a3b609d12a/PerfilFragment" managed-name="Agrosens.Views.PerfilFragment, Agrosens" managed-type-token-id="33554443" />
   </java-to-managed>
   <managed-to-java>
-    <entry java-name="com/companyname/agrosens/MainActivity" managed-name="Agrosens.MainActivity, Agrosens" managed-type-token-id="33554435" />
-    <entry java-name="crc648cf713a3b609d12a/AddEventBottomSheet" managed-name="Agrosens.Views.AddEventBottomSheet, Agrosens" managed-type-token-id="33554437" />
-    <entry java-name="crc648cf713a3b609d12a/CalendarFragment" managed-name="Agrosens.Views.CalendarFragment, Agrosens" managed-type-token-id="33554438" />
-    <entry java-name="crc648cf713a3b609d12a/GeralFragment" managed-name="Agrosens.Views.GeralFragment, Agrosens" managed-type-token-id="33554439" />
-    <entry java-name="crc648cf713a3b609d12a/HomeFragment" managed-name="Agrosens.Views.HomeFragment, Agrosens" managed-type-token-id="33554440" />
-    <entry java-name="crc648cf713a3b609d12a/PerfilFragment" managed-name="Agrosens.Views.PerfilFragment, Agrosens" managed-type-token-id="33554441" />
+    <entry java-name="com/companyname/agrosens/MainActivity" managed-name="Agrosens.MainActivity, Agrosens" managed-type-token-id="33554436" />
+    <entry java-name="com/companyname/agrosens/MainActivity_MapWebViewClient" managed-name="Agrosens.MainActivity+MapWebViewClient, Agrosens" managed-type-token-id="33554455" />
+    <entry java-name="com/companyname/agrosens/MainActivity_StatusBarInsetsListener" managed-name="Agrosens.MainActivity+StatusBarInsetsListener, Agrosens" managed-type-token-id="33554456" />
+    <entry java-name="com/companyname/agrosens/MainActivity_LayoutListener" managed-name="Agrosens.MainActivity+LayoutListener, Agrosens" managed-type-token-id="33554457" />
+    <entry java-name="com/companyname/agrosens/MainActivity_MapWebChromeClient" managed-name="Agrosens.MainActivity+MapWebChromeClient, Agrosens" managed-type-token-id="33554458" />
+    <entry java-name="com/companyname/agrosens/MainActivity_MapValueCallback" managed-name="Agrosens.MainActivity+MapValueCallback, Agrosens" managed-type-token-id="33554459" />
+    <entry java-name="crc648cf713a3b609d12a/AddEventBottomSheet" managed-name="Agrosens.Views.AddEventBottomSheet, Agrosens" managed-type-token-id="33554438" />
+    <entry java-name="crc648cf713a3b609d12a/AddSensorBottomSheet" managed-name="Agrosens.Views.AddSensorBottomSheet, Agrosens" managed-type-token-id="33554439" />
+    <entry java-name="crc648cf713a3b609d12a/CalendarFragment" managed-name="Agrosens.Views.CalendarFragment, Agrosens" managed-type-token-id="33554440" />
+    <entry java-name="crc648cf713a3b609d12a/GeralFragment" managed-name="Agrosens.Views.GeralFragment, Agrosens" managed-type-token-id="33554441" />
+    <entry java-name="crc648cf713a3b609d12a/HomeFragment" managed-name="Agrosens.Views.HomeFragment, Agrosens" managed-type-token-id="33554442" />
+    <entry java-name="crc648cf713a3b609d12a/PerfilFragment" managed-name="Agrosens.Views.PerfilFragment, Agrosens" managed-type-token-id="33554443" />
   </managed-to-java>
 </api>

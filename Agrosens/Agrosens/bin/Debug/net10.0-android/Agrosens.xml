@@ -4,6 +4,55 @@
         <name>Agrosens</name>
     </assembly>
     <members>
+        <member name="M:Agrosens.MainActivity.StartOfWeek(System.DateTime)">
+            <summary>Segunda-feira da semana de <paramref name="d"/>.</summary>
+        </member>
+        <member name="M:Agrosens.MainActivity.RefreshWeatherAsync(System.Action)">
+            <summary>
+            1) mostra na hora o clima salvo no banco local (funciona offline);
+            2) busca na API, grava no banco e atualiza a tela.
+            <paramref name="onUpdate"/> roda na thread de UI após cada etapa.
+            </summary>
+        </member>
+        <member name="M:Agrosens.MainActivity.ScrollHomeToDay(System.DateTime)">
+            <summary>Rola a lista de eventos até a seção do dia clicado (se houver eventos nele).</summary>
+        </member>
+        <member name="T:Agrosens.Models.WeatherDay">
+            <summary>Previsão/observação diária guardada localmente (cache do Open-Meteo).</summary>
+        </member>
+        <member name="P:Agrosens.Models.WeatherDay.DateKey">
+            <summary>Data no formato yyyy-MM-dd (chave: um registro por dia).</summary>
+        </member>
+        <member name="P:Agrosens.Models.WeatherDay.FetchedAt">
+            <summary>Quando este registro foi baixado da API.</summary>
+        </member>
+        <member name="M:Agrosens.Services.DatabaseService.SaveWeatherAsync(System.Collections.Generic.IEnumerable{Agrosens.Services.DayWeather},System.Double,System.Double)">
+            <summary>Grava (insere ou substitui) a previsão baixada da API.</summary>
+        </member>
+        <member name="M:Agrosens.Services.DatabaseService.GetWeatherAsync">
+            <summary>Lê o clima salvo localmente (funciona sem internet).</summary>
+        </member>
+        <member name="T:Agrosens.Services.DayWeather">
+            <summary>Previsão de um dia (dados do Open-Meteo).</summary>
+        </member>
+        <member name="P:Agrosens.Services.DayWeather.FetchedAt">
+            <summary>Quando foi baixado da API (preenchido ao ler do banco local).</summary>
+        </member>
+        <member name="T:Agrosens.Services.WeatherService">
+            <summary>Cliente simples da API gratuita do Open-Meteo (sem chave de API).</summary>
+        </member>
+        <member name="M:Agrosens.Services.WeatherService.GetDailyAsync(System.Double,System.Double)">
+            <summary>Busca a previsão diária cobrindo de 7 dias atrás até 7 dias à frente.</summary>
+        </member>
+        <member name="T:Agrosens.Views.AddSensorBottomSheet">
+            <summary>
+            Cadastro/edição de sensor em 2 passos: escolher o tipo e preencher
+            apenas o nome + a porcentagem de alerta (porteira: minutos aberta).
+            </summary>
+        </member>
+        <member name="M:Agrosens.Views.AddSensorBottomSheet.LerPercentual(System.Int32,System.Int32)">
+            <summary>Lê a porcentagem de alerta (0 a 100); vazio/inválido usa o padrão.</summary>
+        </member>
         <member name="T:Agrosens.Resource">
             <summary>
             Android Resource Designer class.

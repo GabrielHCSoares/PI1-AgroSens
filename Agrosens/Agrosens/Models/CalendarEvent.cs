@@ -25,5 +25,13 @@ namespace Agrosens.Models
         public string CreatedBy { get; set; } = string.Empty;
 
         public int Status { get; set; } = 0;
+
+        public const int StatusPendente = 0;
+        public const int StatusFeito = 1;
+        public const int StatusCancelado = 2;
+
+        public string Category { get; set; } = string.Empty;
+
+        public string ColorHex { get; set; } = "#1B3A24";
     }
 }

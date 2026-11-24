@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using System.Threading.Tasks;
 using Agrosens.Models;
 using Android.App;
@@ -58,7 +59,12 @@ namespace Agrosens.Services
             {
                 "ALTER TABLE calendar_events ADD COLUMN StartTime INTEGER NOT NULL DEFAULT 0",
                 "ALTER TABLE calendar_events ADD COLUMN EndTime INTEGER NOT NULL DEFAULT 0",
-                "ALTER TABLE calendar_events ADD COLUMN Status INTEGER NOT NULL DEFAULT 0"
+                "ALTER TABLE calendar_events ADD COLUMN Status INTEGER NOT NULL DEFAULT 0",
+                "ALTER TABLE calendar_events ADD COLUMN Category TEXT",
+                "ALTER TABLE calendar_events ADD COLUMN ColorHex TEXT",
+                "ALTER TABLE sensores ADD COLUMN ValorAtual REAL",
+                "ALTER TABLE sensores ADD COLUMN PorteiraAberta INTEGER NOT NULL DEFAULT 0",
+                "ALTER TABLE agro_tasks ADD COLUMN Category TEXT"
             })
             {
                 try
@@ -98,6 +104,8 @@ namespace Agrosens.Services
                 Android.Util.Log.Info("Agrosens.DB", $"Caminho do banco SQLite: {dbPath}");
                 await conn.CreateTableAsync<CalendarEvent>().ConfigureAwait(false);
                 await conn.CreateTableAsync<AgroTask>().ConfigureAwait(false);
+                await conn.CreateTableAsync<Sensor>().ConfigureAwait(false);
+                await conn.CreateTableAsync<WeatherDay>().ConfigureAwait(false);
                 await EnsureColumnsAsync(conn).ConfigureAwait(false);
 
                 int removidas = await RemoverTarefaSementeAsync(conn).ConfigureAwait(false);
@@ -151,6 +159,19 @@ namespace Agrosens.Services
                 .ToListAsync().ConfigureAwait(false);
         }
 
+        public async Task<List<CalendarEvent>> GetEventsForWeekAsync(DateTime start, DateTime end)
+        {
+            await InitializeAsync().ConfigureAwait(false);
+            var conn = await GetConnectionAsync().ConfigureAwait(false);
+            var ini = DateTime.SpecifyKind(start.Date, DateTimeKind.Unspecified);
+            var fim = DateTime.SpecifyKind(end.Date.AddDays(1), DateTimeKind.Unspecified);
+            return await conn.Table<CalendarEvent>()
+                .Where(e => e.EventDate >= ini && e.EventDate < fim)
+                .OrderBy(e => e.EventDate)
+                .ThenBy(e => e.StartTime)
+                .ToListAsync().ConfigureAwait(false);
+        }
+
         public async Task<List<CalendarEvent>> GetAllEventsForDayAsync(DateTime day)
         {
             await InitializeAsync().ConfigureAwait(false);
@@ -161,6 +182,73 @@ namespace Agrosens.Services
                 .Where(e => e.EventDate >= start && e.EventDate < end)
                 .OrderBy(e => e.StartTime)
                 .ToListAsync().ConfigureAwait(false);
+        }
+
+        // ---------- Clima (cache local do Open-Meteo) ----------
+
+        /// <summary>Grava (insere ou substitui) a previsão baixada da API.</summary>
+        public async Task SaveWeatherAsync(IEnumerable<DayWeather> dias, double lat, double lng)
+        {
+            await InitializeAsync().ConfigureAwait(false);
+            var conn = await GetConnectionAsync().ConfigureAwait(false);
+            var agora = DateTime.Now;
+            var registros = dias.Select(d => new WeatherDay
+            {
+                DateKey = d.Date.ToString("yyyy-MM-dd"),
+                Code = d.Code,
+                TempMax = d.TempMax,
+                TempMin = d.TempMin,
+                RainProbability = d.RainProbability,
+                RainSum = d.RainSum,
+                WindMax = d.WindMax,
+                WindDirection = d.WindDirection,
+                FeelsMax = d.FeelsMax,
+                FeelsMin = d.FeelsMin,
+                HumidityMean = d.HumidityMean,
+                DewPointMean = d.DewPointMean,
+                Latitude = lat,
+                Longitude = lng,
+                FetchedAt = agora
+            }).ToList();
+
+            await conn.RunInTransactionAsync(tran =>
+            {
+                foreach (var r in registros)
+                    tran.InsertOrReplace(r);
+            }).ConfigureAwait(false);
+            Android.Util.Log.Info("Agrosens.DB", $"Clima salvo no banco: {registros.Count} dias");
+        }
+
+        /// <summary>Lê o clima salvo localmente (funciona sem internet).</summary>
+        public async Task<Dictionary<DateTime, DayWeather>> GetWeatherAsync()
+        {
+            await InitializeAsync().ConfigureAwait(false);
+            var conn = await GetConnectionAsync().ConfigureAwait(false);
+            var rows = await conn.Table<WeatherDay>().ToListAsync().ConfigureAwait(false);
+            var result = new Dictionary<DateTime, DayWeather>();
+            foreach (var r in rows)
+            {
+                if (!DateTime.TryParseExact(r.DateKey, "yyyy-MM-dd", System.Globalization.CultureInfo.InvariantCulture,
+                        System.Globalization.DateTimeStyles.None, out var data))
+                    continue;
+                result[data.Date] = new DayWeather
+                {
+                    Date = data.Date,
+                    Code = r.Code,
+                    TempMax = r.TempMax,
+                    TempMin = r.TempMin,
+                    RainProbability = r.RainProbability,
+                    RainSum = r.RainSum,
+                    WindMax = r.WindMax,
+                    WindDirection = r.WindDirection,
+                    FeelsMax = r.FeelsMax,
+                    FeelsMin = r.FeelsMin,
+                    HumidityMean = r.HumidityMean,
+                    DewPointMean = r.DewPointMean,
+                    FetchedAt = r.FetchedAt
+                };
+            }
+            return result;
         }
 
         public async Task<int> SaveEventAsync(CalendarEvent ev)
@@ -222,6 +310,51 @@ namespace Agrosens.Services
             await InitializeAsync().ConfigureAwait(false);
             var conn = await GetConnectionAsync().ConfigureAwait(false);
             return await conn.DeleteAsync(task).ConfigureAwait(false);
+        }
+
+        public async Task<List<Sensor>> GetSensoresAsync()
+        {
+            await InitializeAsync().ConfigureAwait(false);
+            var conn = await GetConnectionAsync().ConfigureAwait(false);
+            return await conn.Table<Sensor>().OrderByDescending(s => s.CreatedAt).ToListAsync().ConfigureAwait(false);
+        }
+
+        public async Task<int> SaveSensorAsync(Sensor sensor)
+        {
+            await InitializeAsync().ConfigureAwait(false);
+            var conn = await GetConnectionAsync().ConfigureAwait(false);
+            if (sensor.Id == 0)
+                return await conn.InsertAsync(sensor).ConfigureAwait(false);
+            else
+                return await conn.UpdateAsync(sensor).ConfigureAwait(false);
+        }
+
+        public async Task<int> DeleteSensorAsync(Sensor sensor)
+        {
+            await InitializeAsync().ConfigureAwait(false);
+            var conn = await GetConnectionAsync().ConfigureAwait(false);
+            return await conn.DeleteAsync(sensor).ConfigureAwait(false);
+        }
+
+        // Apaga todos os eventos do calendário e todos os sensores
+        public async Task ClearCalendarAndSensorsAsync()
+        {
+            await InitializeAsync().ConfigureAwait(false);
+            var conn = await GetConnectionAsync().ConfigureAwait(false);
+            int eventos = await conn.DeleteAllAsync<CalendarEvent>().ConfigureAwait(false);
+            int sensores = await conn.DeleteAllAsync<Sensor>().ConfigureAwait(false);
+            Log.Info("Agrosens.DB",
+                $"ClearCalendarAndSensorsAsync: eventos removidos={eventos}, sensores removidos={sensores}");
+        }
+
+        // Apaga todos os eventos do calendário
+        public async Task ClearCalendarAsync()
+        {
+            await InitializeAsync().ConfigureAwait(false);
+            var conn = await GetConnectionAsync().ConfigureAwait(false);
+            int eventos = await conn.DeleteAllAsync<CalendarEvent>().ConfigureAwait(false);
+            Log.Info("Agrosens.DB",
+                $"ClearCalendarAsync: eventos removidos={eventos}");
         }
 
         private async Task<int> RemoverTarefaSementeAsync(SQLiteAsyncConnection conn)

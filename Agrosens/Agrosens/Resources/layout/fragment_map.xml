@@ -1,40 +1,138 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF"
-    android:fillViewport="true">
+    android:background="#FFFFFF">
 
-    <LinearLayout
+<LinearLayout
+    android:id="@+id/mapMainColumn"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- LINHA 1: titulo sozinho, largura total -->
+    <TextView
+        android:id="@+id/mapTitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:paddingLeft="16dp"
-        android:paddingRight="16dp"
-        android:paddingTop="24dp"
-        android:paddingBottom="24dp">
+        android:text="Mapa da propriedade"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#1B3A24"
+        android:maxLines="1"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="4dp" />
 
-        <TextView
+    <!-- LINHA 2: botoes de acao -->
+    <LinearLayout
+        android:id="@+id/mapHeaderActions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:layout_marginBottom="8dp" />
+
+    <!-- MEIO: mapa ocupando todo o espaço restante -->
+    <FrameLayout
+        android:id="@+id/mapContainer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/bg_map_container"
+        android:clipToOutline="true">
+
+        <WebView
+            android:id="@+id/mapWebView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFFFFF" />
+
+        <ProgressBar
+            android:id="@+id/mapLoading"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Mapa da propriedade"
-            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/mapError"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Falha ao carregar o mapa. Verifique a internet."
+            android:textSize="14sp"
+            android:textColor="#8A968D"
+            android:gravity="center"
+            android:visibility="gone" />
+
+        <!-- Dica: aparece quando não há localização salva -->
+        <TextView
+            android:id="@+id/mapTipBanner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|center_horizontal"
+            android:layout_marginTop="10dp"
+            android:background="#8A000000"
+            android:paddingStart="10dp"
+            android:paddingTop="6dp"
+            android:paddingEnd="10dp"
+            android:paddingBottom="6dp"
+            android:text="Posicione o mapa na sua fazenda e toque em Salvar localização"
+            android:textSize="12sp"
+            android:textColor="#FFFFFF"
+            android:visibility="gone" />
+
+        <!-- Pino fixo no centro do mapa (mira, so aparece no modo de selecao, nao bloqueia gestos) -->
+        <ImageView
+            android:id="@+id/mapCenterPin"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_farm_pin"
+            android:tint="#2E7D32"
+            android:clickable="false"
+            android:focusable="false"
+            android:visibility="gone" />
+
+        <!-- Botao Tentar novamente (erro de carregamento, escondido por padrão) -->
+        <TextView
+            android:id="@+id/mapBtnRetry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Tentar novamente"
+            android:textSize="14sp"
             android:textStyle="bold"
-            android:textColor="#1B3A24"
-            android:layout_marginBottom="12dp" />
+            android:textColor="#FFFFFF"
+            android:background="#8A2E7D32"
+            android:paddingStart="14dp"
+            android:paddingTop="8dp"
+            android:paddingEnd="14dp"
+            android:paddingBottom="8dp"
+            android:visibility="gone"
+            android:clickable="true"
+            android:focusable="true" />
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="300dp"
-            android:layout_marginBottom="20dp">
+    </FrameLayout>
 
-            <WebView
-                android:id="@+id/mapWebView"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="#FFFFFF" />
-
-        </RelativeLayout>
+    <!-- BASE: resumo da propriedade ancorado embaixo -->
+    <LinearLayout
+        android:id="@+id/resumoCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/bg_map_resumo"
+        android:orientation="vertical"
+        android:padding="16dp">
 
         <TextView
             android:layout_width="wrap_content"
@@ -43,22 +141,133 @@
             android:textSize="16sp"
             android:textStyle="bold"
             android:textColor="#1B3A24"
-            android:layout_marginBottom="8dp" />
+            android:layout_marginBottom="10dp" />
 
+        <!-- Linha: localização salva -->
         <TextView
-            android:layout_width="wrap_content"
+            android:id="@+id/mapLocalizacaoSalva"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Área total: 120 ha"
-            android:textSize="14sp"
-            android:textColor="#333333" />
+            android:text="Localização salva: não definida"
+            android:textSize="12sp"
+            android:textColor="#1B3A24"
+            android:textStyle="bold"
+            android:maxLines="2" />
 
+        <!-- Linha: área da garagem -->
         <TextView
-            android:layout_width="wrap_content"
+            android:id="@+id/mapGaragemText"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Talhões: 4"
-            android:textSize="14sp"
-            android:textColor="#333333"
-            android:layout_marginTop="4dp" />
+            android:layout_marginTop="4dp"
+            android:text="Garagem: não definida"
+            android:textSize="12sp"
+            android:textColor="#1B3A24"
+            android:textStyle="bold"
+            android:maxLines="2" />
 
     </LinearLayout>
-</ScrollView>
+
+</LinearLayout>
+
+<!-- ============ MENU LATERAL "Mais opções" (sobre o mapa) ============ -->
+<FrameLayout
+    android:id="@+id/mapMenuOverlay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:elevation="20dp"
+    android:visibility="gone">
+
+    <View
+        android:id="@+id/mapMenuScrim"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#66000000"
+        android:clickable="true" />
+
+    <LinearLayout
+        android:id="@+id/mapMenuPanel"
+        android:layout_width="290dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@drawable/bg_side_panel"
+        android:clickable="true"
+        android:orientation="vertical"
+        android:paddingStart="20dp"
+        android:paddingTop="24dp"
+        android:paddingEnd="12dp"
+        android:paddingBottom="24dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Mais opções"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#1B3A24" />
+
+            <TextView
+                android:id="@+id/mapMenuClose"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:text="✕"
+                android:textSize="18sp"
+                android:textColor="#2E7D32"
+                android:clickable="true"
+                android:focusable="true" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/mapMenuAlterar"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:drawableStart="@drawable/ic_farm_pin"
+            android:drawablePadding="14dp"
+            android:gravity="center_vertical"
+            android:text="Alterar localização"
+            android:textSize="15sp"
+            android:textColor="#1B3A24"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true" />
+
+        <TextView
+            android:id="@+id/mapMenuIrFazenda"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:drawableStart="@drawable/ic_farm_target"
+            android:drawablePadding="14dp"
+            android:gravity="center_vertical"
+            android:text="Ir para minha fazenda"
+            android:textSize="15sp"
+            android:textColor="#1B3A24"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true" />
+
+        <TextView
+            android:id="@+id/mapMenuGaragem"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:drawableStart="@drawable/ic_car_green"
+            android:drawablePadding="14dp"
+            android:gravity="center_vertical"
+            android:text="Selecionar garagem"
+            android:textSize="15sp"
+            android:textColor="#1B3A24"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true" />
+    </LinearLayout>
+</FrameLayout>
+
+</FrameLayout>

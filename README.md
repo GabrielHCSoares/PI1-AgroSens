@@ -30,23 +30,21 @@ O público-alvo do AgroSens são:
 ### Principais funcionalidades
 
 - **Rastreamento de Frota e Implementos:**
-
   Localização GPS em tempo real de tratores e colheitadeiras, além do monitoramento de implementos acoplados (arados, carretas) através de sensores específicos.
 
 - **Monitoramento de Garagens:**
-
   Sensores de presença que indicam em tempo real se o maquinário está guardado no galpão ou operando no campo.
 
 - **Controle de Acessos e Cercados:**
-
   Sensores instalados nas diversas porteiras da propriedade com categorização específica para pastos de gado, áreas de criação de porcos, acessos gerais, ou outros para indicar o status (aberta/fechada). Isso previne a fuga de animais, misturas indesejadas de rebanhos e falhas na segurança.
 
 - **Gestão Hídrica e Alimentar:**
-
   Leitura em tempo real do nível de água em caixas d'água e bebedouros, além do monitoramento do volume de comida armazenada em cochos e silos para o rebanho e equinos.
 
-- **Calendário Integrado:**
+- **Mapa da Propriedade (WebView + Leaflet + OpenStreetMap):**
+  Mapa interativo da propriedade que permite salvar a localização da fazenda. O mapa pode ser centralizado no ponto salvo, que persiste entre reinicializações do app (incluindo desligar o celular). O fluxo de salvamento ocorre em dois modos: modo normal (mapa limpo, botão "Salvar localização" no cabeçalho) e modo de seleção (mira central, dica de arrasto e botões Confirmar/Cancelar).
 
+- **Calendário Integrado:**
   O AgroSens contará com um calendário integrado no aplicativo que facilitará a gestão de atividades dentro e fora da fazenda, como estimativa de colheitas, visitas de fiscais e outros, que poderão ser editadas e planejadas pelo usuário da forma que quiser.
 
 ## Rascunho das telas do App
@@ -69,4 +67,26 @@ O público-alvo do AgroSens são:
 
 ### Tela 5
 
-**Calendário interativo:** Uma tela com um calendário em que o usuário pode editar seus eventos importantes, lembretes, dias em que fez plantio ou colheita de seus produtos ou outras informações que julgar importantes de serem colocadas. O aplicativo então ajudará o produtos com lembretes para as datas e eventos que estiverem marcados.
+**Calendário interativo:** Uma tela com um calendário em que o usuário pode editar seus eventos importantes, lembretes, dias em que fez plantio ou colheita de seus produtos ou outras informações que julgar importantes de serem colocadas. O aplicativo então ajudará o produtos com lembretes para as datas e eventos que estiverem marcadas.
+
+## Tecnologias
+
+- Xamarin.Android (C#, net10.0-android)
+- WebView + Leaflet + OpenStreetMap (mapa interativo)
+- SQLite (sqlite-net-pcl / SQLitePCLRaw) para tarefas, eventos e sensores
+- ISharedPreferences (`agrosens_map`) para persistência da localização da fazenda
+- Xamarin.AndroidX.Fragment, Xamarin.Google.Android.Material
+
+## Compilar
+
+```bash
+dotnet build Agrosens/Agrosens.csproj
+dotnet run --project Agrosens/Agrosens.csproj
+```
+
+## Arquivos principais
+
+- `Agrosens/MainActivity.cs` — navegação por abas, WebView/Leaflet, fluxo de salvar localização (modos normal e seleção), persistência em SharedPreferences.
+- `Agrosens/Resources/layout/fragment_map.xml` — layout da aba Mapa (título, linha de ações, WebView, card Resumo da propriedade).
+- `Agrosens/Services/DatabaseService.cs` — banco SQLite (tarefas, eventos, sensores).
+- `Agrosens/Services/PreferenceService.cs` — sessão de usuário (login/nome/e-mail).

@@ -102,7 +102,7 @@
                 android:id="@+id/btnClearData"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Limpar dados (calendário e sensores)"
+                android:text="Limpar dados do calendario"
                 android:textColor="#D32F2F"
                 android:textSize="16sp"
                 android:textStyle="bold"

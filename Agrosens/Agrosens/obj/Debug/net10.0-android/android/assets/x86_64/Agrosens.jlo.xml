@@ -14,10 +14,71 @@
         <method name="onLowMemory" method="n_onLowMemory:()V:GetOnLowMemoryHandler" jni_signature="()V" retval="void" is_dynamically_registered="True" />
       </methods>
     </type>
+    <type name="MainActivity_MapWebViewClient" package="com.companyname.agrosens" application_java_class="android.app.Application" mono_runtime_initialization="mono.MonoPackageManager.LoadApplication (context);" extends_type="android.webkit.WebViewClient" partial_assembly_qualified_name="Agrosens.MainActivity+MapWebViewClient, Agrosens">
+      <constructors>
+        <constructor name="MainActivity_MapWebViewClient" method="n_.ctor:()V:" jni_signature="()V" managed_parameters="" retval="void" is_dynamically_registered="True" />
+      </constructors>
+      <methods>
+        <method name="onPageFinished" method="n_onPageFinished:(Landroid/webkit/WebView;Ljava/lang/String;)V:GetOnPageFinished_Landroid_webkit_WebView_Ljava_lang_String_Handler" jni_signature="(Landroid/webkit/WebView;Ljava/lang/String;)V" params="android.webkit.WebView p0, java.lang.String p1" retval="void" is_dynamically_registered="True" super_call="p0, p1" activate_call="p0, p1" />
+        <method name="onReceivedError" method="n_onReceivedError:(Landroid/webkit/WebView;Landroid/webkit/WebResourceRequest;Landroid/webkit/WebResourceError;)V:GetOnReceivedError_Landroid_webkit_WebView_Landroid_webkit_WebResourceRequest_Landroid_webkit_WebResourceError_Handler" jni_signature="(Landroid/webkit/WebView;Landroid/webkit/WebResourceRequest;Landroid/webkit/WebResourceError;)V" params="android.webkit.WebView p0, android.webkit.WebResourceRequest p1, android.webkit.WebResourceError p2" retval="void" is_dynamically_registered="True" super_call="p0, p1, p2" activate_call="p0, p1, p2" />
+      </methods>
+    </type>
+    <type name="MainActivity_StatusBarInsetsListener" package="com.companyname.agrosens" application_java_class="android.app.Application" mono_runtime_initialization="mono.MonoPackageManager.LoadApplication (context);" extends_type="java.lang.Object" partial_assembly_qualified_name="Agrosens.MainActivity+StatusBarInsetsListener, Agrosens">
+      <implemented_interfaces>
+        <interface name="android.view.View.OnApplyWindowInsetsListener" />
+      </implemented_interfaces>
+      <constructors>
+        <constructor name="MainActivity_StatusBarInsetsListener" method="n_.ctor:()V:" jni_signature="()V" managed_parameters="" retval="void" is_dynamically_registered="True" />
+        <constructor name="MainActivity_StatusBarInsetsListener" method="n_.ctor:(Landroid/view/View;)V:" jni_signature="(Landroid/view/View;)V" managed_parameters="Android.Views.View, Mono.Android" params="android.view.View p0" retval="void" is_dynamically_registered="True" super_call="" activate_call="p0" />
+      </constructors>
+      <methods>
+        <method name="onApplyWindowInsets" method="n_onApplyWindowInsets:(Landroid/view/View;Landroid/view/WindowInsets;)Landroid/view/WindowInsets;:GetOnApplyWindowInsets_Landroid_view_View_Landroid_view_WindowInsets_Handler:Android.Views.View+IOnApplyWindowInsetsListenerInvoker, Mono.Android, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" jni_signature="(Landroid/view/View;Landroid/view/WindowInsets;)Landroid/view/WindowInsets;" params="android.view.View p0, android.view.WindowInsets p1" retval="android.view.WindowInsets" is_dynamically_registered="True" super_call="p0, p1" activate_call="p0, p1" />
+      </methods>
+    </type>
+    <type name="MainActivity_LayoutListener" package="com.companyname.agrosens" application_java_class="android.app.Application" mono_runtime_initialization="mono.MonoPackageManager.LoadApplication (context);" extends_type="java.lang.Object" partial_assembly_qualified_name="Agrosens.MainActivity+LayoutListener, Agrosens">
+      <implemented_interfaces>
+        <interface name="android.view.ViewTreeObserver.OnGlobalLayoutListener" />
+      </implemented_interfaces>
+      <constructors>
+        <constructor name="MainActivity_LayoutListener" method="n_.ctor:()V:" jni_signature="()V" managed_parameters="" retval="void" is_dynamically_registered="True" />
+      </constructors>
+      <methods>
+        <method name="onGlobalLayout" method="n_onGlobalLayout:()V:GetOnGlobalLayoutHandler:Android.Views.ViewTreeObserver+IOnGlobalLayoutListenerInvoker, Mono.Android, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" jni_signature="()V" retval="void" is_dynamically_registered="True" />
+      </methods>
+    </type>
+    <type name="MainActivity_MapWebChromeClient" package="com.companyname.agrosens" application_java_class="android.app.Application" mono_runtime_initialization="mono.MonoPackageManager.LoadApplication (context);" extends_type="android.webkit.WebChromeClient" partial_assembly_qualified_name="Agrosens.MainActivity+MapWebChromeClient, Agrosens">
+      <constructors>
+        <constructor name="MainActivity_MapWebChromeClient" method="n_.ctor:()V:" jni_signature="()V" managed_parameters="" retval="void" is_dynamically_registered="True" />
+      </constructors>
+      <methods>
+        <method name="onConsoleMessage" method="n_onConsoleMessage:(Landroid/webkit/ConsoleMessage;)Z:GetOnConsoleMessage_Landroid_webkit_ConsoleMessage_Handler" jni_signature="(Landroid/webkit/ConsoleMessage;)Z" params="android.webkit.ConsoleMessage p0" retval="boolean" is_dynamically_registered="True" super_call="p0" activate_call="p0" />
+      </methods>
+    </type>
+    <type name="MainActivity_MapValueCallback" package="com.companyname.agrosens" application_java_class="android.app.Application" mono_runtime_initialization="mono.MonoPackageManager.LoadApplication (context);" extends_type="java.lang.Object" partial_assembly_qualified_name="Agrosens.MainActivity+MapValueCallback, Agrosens">
+      <implemented_interfaces>
+        <interface name="android.webkit.ValueCallback" />
+      </implemented_interfaces>
+      <constructors>
+        <constructor name="MainActivity_MapValueCallback" method="n_.ctor:()V:" jni_signature="()V" managed_parameters="" retval="void" is_dynamically_registered="True" />
+      </constructors>
+      <methods>
+        <method name="onReceiveValue" method="n_onReceiveValue:(Ljava/lang/Object;)V:GetOnReceiveValue_Ljava_lang_Object_Handler:Android.Webkit.IValueCallbackInvoker, Mono.Android, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" jni_signature="(Ljava/lang/Object;)V" params="java.lang.Object p0" retval="void" is_dynamically_registered="True" super_call="p0" activate_call="p0" />
+      </methods>
+    </type>
     <type name="AddEventBottomSheet" package="crc648cf713a3b609d12a" application_java_class="android.app.Application" mono_runtime_initialization="mono.MonoPackageManager.LoadApplication (context);" extends_type="com.google.android.material.bottomsheet.BottomSheetDialogFragment" partial_assembly_qualified_name="Agrosens.Views.AddEventBottomSheet, Agrosens">
       <constructors>
         <constructor name="AddEventBottomSheet" method="n_.ctor:()V:" jni_signature="()V" managed_parameters="" retval="void" is_dynamically_registered="True" />
         <constructor name="AddEventBottomSheet" method="n_.ctor:(I)V:" jni_signature="(I)V" managed_parameters="System.Int32, System.Private.CoreLib" params="int p0" retval="void" is_dynamically_registered="True" super_call="p0" activate_call="p0" />
+      </constructors>
+      <methods>
+        <method name="onCreateView" method="n_onCreateView:(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;:GetOnCreateView_Landroid_view_LayoutInflater_Landroid_view_ViewGroup_Landroid_os_Bundle_Handler" jni_signature="(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;" params="android.view.LayoutInflater p0, android.view.ViewGroup p1, android.os.Bundle p2" retval="android.view.View" is_dynamically_registered="True" super_call="p0, p1, p2" activate_call="p0, p1, p2" />
+        <method name="onViewCreated" method="n_onViewCreated:(Landroid/view/View;Landroid/os/Bundle;)V:GetOnViewCreated_Landroid_view_View_Landroid_os_Bundle_Handler" jni_signature="(Landroid/view/View;Landroid/os/Bundle;)V" params="android.view.View p0, android.os.Bundle p1" retval="void" is_dynamically_registered="True" super_call="p0, p1" activate_call="p0, p1" />
+      </methods>
+    </type>
+    <type name="AddSensorBottomSheet" package="crc648cf713a3b609d12a" application_java_class="android.app.Application" mono_runtime_initialization="mono.MonoPackageManager.LoadApplication (context);" extends_type="com.google.android.material.bottomsheet.BottomSheetDialogFragment" partial_assembly_qualified_name="Agrosens.Views.AddSensorBottomSheet, Agrosens">
+      <constructors>
+        <constructor name="AddSensorBottomSheet" method="n_.ctor:()V:" jni_signature="()V" managed_parameters="" retval="void" is_dynamically_registered="True" />
+        <constructor name="AddSensorBottomSheet" method="n_.ctor:(I)V:" jni_signature="(I)V" managed_parameters="System.Int32, System.Private.CoreLib" params="int p0" retval="void" is_dynamically_registered="True" super_call="p0" activate_call="p0" />
       </constructors>
       <methods>
         <method name="onCreateView" method="n_onCreateView:(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;:GetOnCreateView_Landroid_view_LayoutInflater_Landroid_view_ViewGroup_Landroid_os_Bundle_Handler" jni_signature="(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;" params="android.view.LayoutInflater p0, android.view.ViewGroup p1, android.os.Bundle p2" retval="android.view.View" is_dynamically_registered="True" super_call="p0, p1, p2" activate_call="p0, p1, p2" />
@@ -63,7 +124,13 @@
   </jcw-types>
   <acw-types partial-assembly-name="Agrosens" module-name="Agrosens.dll">
     <type assembly-qualified-name="Agrosens.MainActivity, Agrosens, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" compat-jni-name="com.companyname.agrosens.MainActivity" java-key="com.companyname.agrosens.MainActivity" managed-key="Agrosens.MainActivity" partial-assembly-qualified-name="Agrosens.MainActivity, Agrosens" />
+    <type assembly-qualified-name="Agrosens.MainActivity+MapWebViewClient, Agrosens, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" compat-jni-name="com.companyname.agrosens.MainActivity_MapWebViewClient" java-key="com.companyname.agrosens.MainActivity_MapWebViewClient" managed-key="Agrosens.MainActivity.MapWebViewClient" partial-assembly-qualified-name="Agrosens.MainActivity+MapWebViewClient, Agrosens" />
+    <type assembly-qualified-name="Agrosens.MainActivity+StatusBarInsetsListener, Agrosens, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" compat-jni-name="com.companyname.agrosens.MainActivity_StatusBarInsetsListener" java-key="com.companyname.agrosens.MainActivity_StatusBarInsetsListener" managed-key="Agrosens.MainActivity.StatusBarInsetsListener" partial-assembly-qualified-name="Agrosens.MainActivity+StatusBarInsetsListener, Agrosens" />
+    <type assembly-qualified-name="Agrosens.MainActivity+LayoutListener, Agrosens, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" compat-jni-name="com.companyname.agrosens.MainActivity_LayoutListener" java-key="com.companyname.agrosens.MainActivity_LayoutListener" managed-key="Agrosens.MainActivity.LayoutListener" partial-assembly-qualified-name="Agrosens.MainActivity+LayoutListener, Agrosens" />
+    <type assembly-qualified-name="Agrosens.MainActivity+MapWebChromeClient, Agrosens, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" compat-jni-name="com.companyname.agrosens.MainActivity_MapWebChromeClient" java-key="com.companyname.agrosens.MainActivity_MapWebChromeClient" managed-key="Agrosens.MainActivity.MapWebChromeClient" partial-assembly-qualified-name="Agrosens.MainActivity+MapWebChromeClient, Agrosens" />
+    <type assembly-qualified-name="Agrosens.MainActivity+MapValueCallback, Agrosens, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" compat-jni-name="com.companyname.agrosens.MainActivity_MapValueCallback" java-key="com.companyname.agrosens.MainActivity_MapValueCallback" managed-key="Agrosens.MainActivity.MapValueCallback" partial-assembly-qualified-name="Agrosens.MainActivity+MapValueCallback, Agrosens" />
     <type assembly-qualified-name="Agrosens.Views.AddEventBottomSheet, Agrosens, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" compat-jni-name="agrosens.views.AddEventBottomSheet" java-key="crc648cf713a3b609d12a.AddEventBottomSheet" managed-key="Agrosens.Views.AddEventBottomSheet" partial-assembly-qualified-name="Agrosens.Views.AddEventBottomSheet, Agrosens" />
+    <type assembly-qualified-name="Agrosens.Views.AddSensorBottomSheet, Agrosens, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" compat-jni-name="agrosens.views.AddSensorBottomSheet" java-key="crc648cf713a3b609d12a.AddSensorBottomSheet" managed-key="Agrosens.Views.AddSensorBottomSheet" partial-assembly-qualified-name="Agrosens.Views.AddSensorBottomSheet, Agrosens" />
     <type assembly-qualified-name="Agrosens.Views.CalendarFragment, Agrosens, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" compat-jni-name="agrosens.views.CalendarFragment" java-key="crc648cf713a3b609d12a.CalendarFragment" managed-key="Agrosens.Views.CalendarFragment" partial-assembly-qualified-name="Agrosens.Views.CalendarFragment, Agrosens" />
     <type assembly-qualified-name="Agrosens.Views.GeralFragment, Agrosens, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" compat-jni-name="agrosens.views.GeralFragment" java-key="crc648cf713a3b609d12a.GeralFragment" managed-key="Agrosens.Views.GeralFragment" partial-assembly-qualified-name="Agrosens.Views.GeralFragment, Agrosens" />
     <type assembly-qualified-name="Agrosens.Views.HomeFragment, Agrosens, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" compat-jni-name="agrosens.views.HomeFragment" java-key="crc648cf713a3b609d12a.HomeFragment" managed-key="Agrosens.Views.HomeFragment" partial-assembly-qualified-name="Agrosens.Views.HomeFragment, Agrosens" />
